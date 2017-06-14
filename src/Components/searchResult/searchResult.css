@@ -1,0 +1,41 @@
+.poster {
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px black;
+    transition: box-shadow .3s ease-in-out;
+}
+
+.poster:hover {
+    box-shadow: 3px 3px 10px black;
+
+}
+
+.result-card {
+    color: teal;
+    margin: 2% auto;
+    cursor: pointer;
+    text-align: left;
+}
+.result-card:hover{
+    color: black;
+}
+
+.result-card .caption {
+    margin: .5%;
+}
+
+
+.caption .title{
+    font-size: 1.3em;
+    margin-top: .5%;
+    margin-bottom: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.caption .year{
+    font-size: 1em;
+    margin-top: 0;
+    padding: 0;
+    font-family:'PT Sans', sans-serif;
+    font-style: italic;
+}

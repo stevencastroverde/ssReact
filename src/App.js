@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import SearchBar from './Components/SearchBar/Searchbar';
+import freeMovies from './dummyData/freeMovies';
+import SearchResult from './Components/searchResult/SearchResult';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+        <div>
+      <SearchBar />
+        <div className="results-grid">
+      {freeMovies.map((movie) => <SearchResult movie={movie}/>)}
+    </div>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
+    )
   }
 }
 
