@@ -5,25 +5,25 @@ import './MovieSearch.css';
 import freeMovies from '../../dummyData/freeMovies';
 
 
-class MovieSearch extends React.Component {
+class MovieSearch extends Component {
+    getInitialState: function (){
+        return{
+            movies: freeMovies;
+            }
+    },
 
     render() {
         return (
             <SearchBar />
         <div>
-            {freeMovies.map((movie) =>
-                <SearchResult result={movie}/>
-            )}
+            {
+                this.state.movies.map((movie) => {
+                  return  <SearchResult movie={movie}/>;
+                });
+            }
         </div>
 
         )};
-
-
-
-
-
-
-
 }
 
 export default MovieSearch
