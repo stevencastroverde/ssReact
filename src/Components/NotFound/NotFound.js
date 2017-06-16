@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 
 
-import './ShowPage.css';
+import './NotFound.css';
 
-class ShowPage extends Component {
+class NotFound extends Component {
     render() {
         return (
 
             <div>
-                <h1>ShowPage</h1>
+                <h1>M Not Found</h1>
 
             </div>
         )
     }
 }
 
-export default ShowPage;
+export default NotFound;
