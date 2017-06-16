@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
+import API from '../../API/apiCalls';
 import SearchBar from './SearchBar/SearchBar';
 import SearchResult from './SearchResult/SearchResult';
-import freeMovies from '../../dummyData/freeMovies';
-import freeShows from '../../dummyData/freeShows';
 import './SearchPage.css';
 
 
@@ -10,21 +9,28 @@ class SearchPage extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            movies: freeMovies,
-            shows: freeShows,
+            results: [],
             searchTerm: '',
             subscriptions: []
         };
         this.handleCheckboxChange = this.handleCheckboxChange.bind(this);
         this.handleSearch = this.handleSearch.bind(this);
         this.selectCard = this.selectCard.bind(this);
+        this.componentWillMount = this.componentWillMount.bind(this);
     }
-    componentDidMount(){
-        //if tv is checked get free shows
-        //else get free movies
-        //maybe move to search results or set state to tv
+
+    componentWillMount(){
+         API.getFreeShows()
+             .then(data => {
+                 this.setState({results: data})
+             })
+
+
+
+
+
     }
-    handleCheckboxChange(e){
+        handleCheckboxChange(e){
         const target = e.target;
         const value = target.type === 'checkbox' ? target.checked : target.value;
         const name = target.name;
@@ -38,7 +44,10 @@ class SearchPage extends Component {
     }
     handleSearch(e){
         e.preventDefault();
-        console.log(this.state.subscriptions, this.state.searchTerm);
+        API.searchShows(this.state.searchTerm)
+            .then(data => {
+                this.setState({results:data})
+            })
     }
     selectCard(e, cardId, isShow){
         if(isShow){
@@ -54,7 +63,8 @@ class SearchPage extends Component {
             <div>
                 <SearchBar inputChange={this.handleCheckboxChange} submitSearch={this.handleSearch} />
                 <section className='results-grid'>
-                    {this.state.movies.map((result) => <SearchResult key={result.id} {...result} chooseCard={this.selectCard}/>)}
+                    {this.state && this.state.results &&
+                        this.state.results.map((result) => <SearchResult key={result.id} {...result} chooseCard={this.selectCard}/>)}
                 </section>
             </div>
         )
