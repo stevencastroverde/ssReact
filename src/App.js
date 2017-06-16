@@ -10,9 +10,9 @@ class App extends Component {
     return (
         <div>
       <SearchBar />
-        <div className="results-grid">
-      {freeMovies.map((movie) => <SearchResult key={movie.id} {...movie}/>)}
-    </div>
+        <section className="results-grid">
+      {freeShows.map((movie) => <SearchResult key={movie.id} {...movie}/>)}
+    </section>
         </div>
     )
   }
