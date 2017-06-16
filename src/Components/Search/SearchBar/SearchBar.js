@@ -1,18 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import SubscriptionSources from '../../../dummyData/SubscriptionSources.js';
 import './SearchBar.css';
 
-class SearchBar extends Component {
-
-    render() {
+const SearchBar = (props) => {
         return (
-            <form onSubmit={this.props.submitSearch}>
-                <input type="text" placeholder="Search" name='searchTerm' onChange={this.props.inputChange} />
+            <form onSubmit={props.submitSearch}>
+                <input type="text" placeholder="Search" name='searchTerm' onChange={props.inputChange} />
 
 								{SubscriptionSources.map((source, i) => {
 									return (
 										<label key={i} htmlFor={source.id}>{source.displayName}
-											<input type="checkbox" id={source.id} name={source.value} key={source.id} onChange={this.props.inputChange}/>
+											<input type="checkbox" id={source.id} name={source.value} key={source.id} onChange={props.inputChange}/>
 											</label>
 
 									)
@@ -21,7 +19,7 @@ class SearchBar extends Component {
                 <button type="submit">Submit</button>
             </form>
         )
-    }
+
 }
 
 

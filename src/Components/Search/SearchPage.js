@@ -5,6 +5,7 @@ import freeMovies from '../../dummyData/freeMovies';
 import freeShows from '../../dummyData/freeShows';
 import './SearchPage.css';
 
+
 class SearchPage extends Component {
     constructor(props) {
         super(props)
@@ -37,10 +38,14 @@ class SearchPage extends Component {
     }
     handleSearch(e){
         e.preventDefault();
-        console.log(this.state.subscriptions);
+        console.log(this.state.subscriptions, this.state.searchTerm);
     }
-    selectCard(e, data){
-        console.log(data)
+    selectCard(e, cardId, isShow){
+        if(isShow){
+            this.props.history.push('/show/' + cardId + '/' + this.state.subscriptions.join());
+        } else {
+            this.props.history.push('/movie/' + cardId + '/' + this.state.subscriptions.join());
+        }
     };
 
 
