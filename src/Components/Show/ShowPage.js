@@ -11,7 +11,7 @@ class ShowPage extends Component {
     }
     componentWillMount() {
 
-        let params = this.props.match.params
+        let params = this.props.match.params;
          API.getSpecificShow(params.id, params.subscriptions)
              .then(response => {
                  this.setState({

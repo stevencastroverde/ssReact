@@ -58,7 +58,17 @@ const API = {
                     throw new Error('Show Does Not Exist')
                 }
             })
-}
+    },
+    getSpecificMovie: (movieId) => {
+        return fetch(`${apiUrl}/movies/${movieId}`)
+            .then(response => {
+                if(response.ok){
+                    return response.json()
+                } else {
+                    throw new Error('Movie Does Not Exist')
+                }
+            })
+    }
 
 }
 

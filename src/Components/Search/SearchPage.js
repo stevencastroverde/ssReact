@@ -20,7 +20,7 @@ class SearchPage extends Component {
     }
 
     componentWillMount(){
-         API.getFreeShows()
+         API.getFreeMovies()
              .then(data => {
                  this.setState({results: data})
              })
