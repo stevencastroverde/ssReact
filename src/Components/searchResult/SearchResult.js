@@ -1,25 +1,35 @@
 import React, { Component } from 'react';
+import TvShow from './TvShow';
+import Movie from './Movie';
 import './searchResult.css';
 
 
+
+
+
 class SearchResult extends Component{
-    selectMovie(e){
+    constructor(props){
+        super(props);
+
+        this.selectCard = this.selectCard.bind(this);
+    }
+
+
+
+    selectCard(e){
         e.preventDefault();
         console.log(this.props.id)
     }
 
-
     render() {
-        return (
-            <div onClick={(e) =>this.selectMovie(e)} className="result-card">
-                <img className="poster" src={this.props.poster_240x342}/>
-                <div className="caption">
-                    <h3 className="truncate title">{this.props.title}</h3>
-                    <h2 className="year">{this.props.release_year}</h2>
-                </div>
-            </div>
-        )
+        const isTvShow = this.props.hasOwnProperty('tvdb');
+
+        return isTvShow === true ?
+            <TvShow poster={this.props.artwork_304x171} title={this.props.title} year={this.props.first_aired} id={this.props.id} clickedTvShow={this.selectCard} />
+            : <Movie  clickedMovie={this.selectCard} poster={this.props.poster_240x342} title={this.props.title} year={this.props.release_year} />;
     }
+
+
 };
 
 export default SearchResult
