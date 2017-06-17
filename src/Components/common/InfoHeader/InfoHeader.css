@@ -2,11 +2,11 @@
     background: #CB356B;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: 55vh;
+    height: 29em;
     padding: 5% 0;
 }
 
-.content{
+.info-header-content{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -14,6 +14,7 @@
     background: -webkit-linear-gradient(to top, #232526, #414345); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #232526, #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     max-width: 90%;
+    max-height: 53vh;
     margin: 0 auto;
     border-radius: 3px;
     box-shadow:  0px 0px 4px rgba(0,0,0, 0.7);
@@ -21,38 +22,43 @@
 }
 
 .header-left {
-    padding: 2%;
+    padding: 1%;
 }
 
 #poster {
     width: auto;
-    height: 31.250em;
+    max-height: 22em;
     border-radius: 10px;
 }
 
 .header-right {
-    padding: 2%;
+    padding: 1%;
     display: flex;
-    flex-flow: column nowrap;
-    max-width: 45%;
-    font-family: 'Open Sans', 'sans-serif'
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    max-width: 55%;
+    font-family: 'Open Sans', 'sans-serif';
+
 }
-#title {
-    font-family: 'Nunito', 'sans-serif'
+ .header-right #title {
+    font-family: 'Nunito', 'sans-serif';
+    font-size: 1.5em;
+    margin: 2% 0;
 }
-
-.overview {
-    align-self: flex-end;
-    font-size: .9em;
-
-
+ .header-right h5 {
+     margin: 1% 0;
+     font-size: .9rem;
+ }
+.header-right .cast-list {
+    display: inline-flex;
+    flex-flow: row;
 }
 
 #channel-logo {
-    width: 4.5em;
+    width: 3.5em;
     height:auto;
+    margin: 2% 0;
 }
-
 
 .cast-list {
     display: flex;
@@ -61,8 +67,4 @@
     max-width: 90%;
     overflow: scroll;
     margin: 0 auto;
-}
-
-.rating {
-    font-size: 1.2em;
 }

@@ -8,15 +8,24 @@ const InfoHeader = (props) => {
     if(props.type === 'television') {
         return (
             <div className="background">
-                <div className="content">
+                <div className="info-header-content">
                     <div className="header-left">
                         <img id="poster" src={props.poster} alt={props.title + 'poster'}/>
                     </div>
                     <div className="header-right">
                         <h1 id="title">{props.title}</h1>
                         <img src={props.channels[0].artwork_208x117} id="channel-logo" alt={props.channels.name + ' logo'}/>
-                        <h2>{props.runtime + ' minutes'}</h2>
-                        {props.genres.map((genre) => <span key={genre.id}>{genre.title}</span>)}
+                        <div className="genre-list">
+                            {props.genres.map((genre, i) => {
+                                if(i === props.genres.length - 1){
+                               return <span key={genre.id}>{genre.title}</span>
+                            } else {
+                               return <span key={genre.id}>{genre.title}{', '}</span>
+                             }
+                             }
+                            )}
+
+                        </div>
                         <p className="overview">{props.overview}</p>
                     </div>
                 </div>
@@ -28,15 +37,25 @@ const InfoHeader = (props) => {
     } else {
         return (
             <div className="background">
-                <div className="content">
+                <div className="info-header-content">
                     <div className="header-left">
                         <img id="poster" src={props.poster_400x570} alt={props.title + 'poster'}/>
                     </div>
                     <div className="header-right">
                         <h1 id="title">{props.title}</h1>
-                        <h3 className="rating"> Rated: {props.rating}</h3>
-                        <h2>{(props.duration / 60) + ' minutes'}</h2>
-                        {props.genres.map((genre) => <span key={genre.id}>{genre.title}</span>)}
+                        <h5 className="rating">{props.rating}</h5>
+                        <h5>{(props.duration / 60) + ' minutes'}</h5>
+                        <div className="genre-list">
+                            {props.genres.map((genre, i) => {
+                                    if(i === props.genres.length - 1){
+                                        return <span key={genre.id}>{genre.title}</span>
+                                    } else {
+                                        return <span key={genre.id}>{genre.title}{', '}</span>
+                                    }
+                                }
+                            )}
+
+                        </div>
                         <p className="overview">{props.overview}</p>
                     </div>
                 </div>

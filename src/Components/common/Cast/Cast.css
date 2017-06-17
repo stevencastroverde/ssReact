@@ -8,11 +8,11 @@
 
 #headshot {
     border-radius: 50%;
-    width: 6vw;
-    height:auto;
+    width: auto;
+    height:4em;
 }
 
-h3 {
+.cast-member h3 {
     font-family: 'Open Sans', 'sans-serif';
     font-size: .8em;
     color: #fefefe;
