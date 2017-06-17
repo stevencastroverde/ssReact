@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import InfoHeader from '../common/InfoHeader/InfoHeader';
+import Episode from './Episode/Episode';
+import Modal from '../common/Modal/Modal';
 import API from '../../API/apiCalls';
 
 
@@ -8,7 +10,11 @@ import './ShowPage.css';
 class ShowPage extends Component {
     constructor(props){
         super(props);
-        this.state ={};
+        this.state ={
+            isOpen: false,
+            clickedEpisode: null
+        };
+        this.toggleModal = this.toggleModal.bind(this);
     }
     componentWillMount() {
 
@@ -23,16 +29,30 @@ class ShowPage extends Component {
              })
 
     }
+    toggleModal(e ,index) {
+        this.setState({
+            isOpen: !this.state.isOpen,
+            clickedEpisode: this.state.episodes[index]
+        })
+    }
 
 
     render() {
-        return (
-
-            <div>
-                {this.state && this.state.showInfo && <InfoHeader {...this.state.showInfo}/> }
-
-            </div>
-        )
+        if(!this.state.showInfo){
+            return <h1>Loading</h1>
+        } else {
+            return (
+                <div>
+                    <InfoHeader {...this.state.showInfo}/>
+                    <div className="season">
+                        {this.state.episodes.map((episode, i) => {
+                           return <Episode key={episode.id} thumbnail={episode.thumbnail_400x225} number={episode.episode_number} title={episode.title} index={i} selectedEpisode={this.toggleModal}/>
+                        })}
+                    </div>
+                    <Modal {...this.state.clickedEpisode} onClose={this.toggleModal} show={this.state.isOpen}/>
+                </div>
+            )
+        }
     }
 }
 
