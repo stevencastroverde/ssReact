@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import API from '../../API/apiCalls';
+import InfoHeader from '../common/InfoHeader/InfoHeader';
 
 import './MoviePage.css';
 
@@ -26,7 +27,7 @@ class MoviePage extends Component {
         return (
 
             <div>
-                {this.state && this.state.movieInfo && <h1>{this.state.movieInfo.title}</h1>}
+                {this.state && this.state.movieInfo && <InfoHeader {...this.state.movieInfo}/>}
 
             </div>
         )

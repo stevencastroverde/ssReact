@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import InfoHeader from '../common/InfoHeader/InfoHeader';
 import API from '../../API/apiCalls';
 
 
@@ -28,7 +29,7 @@ class ShowPage extends Component {
         return (
 
             <div>
-                {this.state && this.state.showInfo && <h1>{this.state.showInfo.title}</h1>}
+                {this.state && this.state.showInfo && <InfoHeader {...this.state.showInfo}/> }
 
             </div>
         )
