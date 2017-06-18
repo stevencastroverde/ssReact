@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import InfoHeader from '../common/InfoHeader/InfoHeader';
 import Episode from './Episode/Episode';
 import Modal from '../common/Modal/Modal';
+import Loading from '../common/Loading/Loading';
 import API from '../../API/apiCalls';
 
 
@@ -12,7 +13,8 @@ class ShowPage extends Component {
         super(props);
         this.state ={
             isOpen: false,
-            clickedEpisode: null
+            clickedEpisode: null,
+            loadingMessage: 'Finding you all the latest episodes'
         };
         this.toggleModal = this.toggleModal.bind(this);
     }
@@ -39,7 +41,7 @@ class ShowPage extends Component {
 
     render() {
         if(!this.state.showInfo){
-            return <h1>Loading</h1>
+            return <Loading message={this.state.loadingMessage} />
         } else {
             return (
                 <div>
