@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import InfoHeader from '../common/InfoHeader/InfoHeader';
 import Season from './Season/Season';
-import Modal from '../common/Modal/Modal';
 import Loading from '../common/Loading/Loading';
+import ShowInfo from './ShowInfo/ShowInfo';
 import API from '../../API/apiCalls';
 
 
@@ -11,6 +11,26 @@ import bobsBurgers from '../../dummyData/bobsBurgers';
 
 
 import './ShowPage.css';
+
+
+// Helper functions
+ const sortEpisodesBySeason = array => {
+    let seasonNumber = {};
+    for ( let i = 0; i < array.length; i++) {
+        let season = array[i].season_number;
+        if (!seasonNumber[season]) {
+            seasonNumber[season] = [];
+        }
+        seasonNumber[season].push(array[i]);
+    }
+    const myArray = [];
+    for (let key in seasonNumber) {
+        myArray.push({season: key, episodes: seasonNumber[key]});
+    }
+    console.log(myArray);
+    return myArray;
+};
+
 
 class ShowPage extends Component {
     constructor(props){
@@ -21,7 +41,6 @@ class ShowPage extends Component {
             loadingMessage: 'Finding you all the latest episodes'
         };
         this.toggleModal = this.toggleModal.bind(this);
-        this.sortEpisodesBySeason = this.sortEpisodesBySeason.bind(this);
     }
     componentWillMount() {
 
@@ -36,29 +55,11 @@ class ShowPage extends Component {
         //      })
         this.setState({
             showInfo: bobsBurgers[0],
-            seasons: this.sortEpisodesBySeason(bobsBurgers[1].results),
+            seasons: sortEpisodesBySeason(bobsBurgers[1].results),
             relatedShows: bobsBurgers[3].results
 
         })
 
-    }
-
-
-    sortEpisodesBySeason = array => {
-        let seasonNumber = {};
-        for ( let i = 0; i < array.length; i++) {
-            let season = array[i].season_number;
-            if (!seasonNumber[season]) {
-                seasonNumber[season] = [];
-            }
-            seasonNumber[season].push(array[i]);
-        }
-        const myArray = [];
-        for (let key in seasonNumber) {
-            myArray.push({season: key, episodes: seasonNumber[key]});
-        }
-        console.log(myArray)
-        return myArray;
     }
 
     toggleModal = (e ,index) => {
@@ -66,7 +67,7 @@ class ShowPage extends Component {
             isOpen: !this.state.isOpen,
             clickedEpisode: this.state.episodes[index]
         })
-    }
+    };
 
 
     render() {
@@ -76,12 +77,16 @@ class ShowPage extends Component {
             return (
                 <div>
                     <InfoHeader {...this.state.showInfo}/>
-                    <div className="seasons">
-                        {this.state.seasons.map((season, i) => {
-                           return <Season key={season.season} {...season}/>
-                        })}
-                    </div>
-                    <Modal {...this.state.clickedEpisode} onClose={this.toggleModal} show={this.state.isOpen}/>
+                    <section className="show-info-seasons">
+                        <div className="show-info-card">
+                            <ShowInfo day={this.state.showInfo.air_day_of_week} time={this.state.showInfo.air_time} status={this.state.showInfo.status}/>
+                        </div>
+                        <div className="seasons">
+                            {this.state.seasons.map((season, i) => {
+                               return <Season key={season.season} {...season}/>
+                            })}
+                        </div>
+                    </section>
                 </div>
             )
         }

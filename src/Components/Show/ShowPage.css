@@ -1,0 +1,16 @@
+.show-info-seasons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.show-info-card {
+    min-width:25%;
+    margin: 2%;
+
+}
+
+.seasons{
+    width: 70%;
+    margin: 2% 0;
+}
