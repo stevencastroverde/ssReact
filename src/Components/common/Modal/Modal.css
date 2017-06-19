@@ -1,0 +1,30 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.9);
+    padding: 50%;
+}
+
+.modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #232526;
+    background: -webkit-linear-gradient(to top, #232526, #414345);
+    background: linear-gradient(to top, #232526, #414345);
+    padding: 2% 4%;
+}
+
+.modal-content h1 {
+    font-family: 'Nunito', 'sans-serif';
+}
+
+#close-icon {
+    cursor: pointer;
+    width: 2em;
+    height: auto;
+}

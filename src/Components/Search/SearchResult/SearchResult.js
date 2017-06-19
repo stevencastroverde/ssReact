@@ -5,7 +5,7 @@ const SearchResult = (props) => {
         const isTvShow = props.hasOwnProperty('tvdb');
         if (isTvShow) {
             return (
-                <div onClick={(e) => props.chooseCard(e, props.id, true)} className="result-card">
+                <div onClick={(e) => props.chooseCard(e, props.id, true)} className="result-card hover-background-color">
                     <img className="poster" src={props.artwork_304x171} alt={props.title + 'show poster'} />
                     <div className="caption">
                         <h3 className="truncate title">{props.title}</h3>
@@ -15,7 +15,7 @@ const SearchResult = (props) => {
             )
         } else {
             return (
-                <div onClick={(e) => props.chooseCard(e, props.id, false)} className="result-card">
+                <div onClick={(e) => props.chooseCard(e, props.id, false)} className="result-card hover-background-color">
                     <img className="poster" src={props.poster_240x342} alt={props.title + 'movie poster'} />
                     <div className="caption">
                         <h3 className="truncate title">{props.title}</h3>
