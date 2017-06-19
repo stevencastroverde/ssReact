@@ -19,10 +19,6 @@ const styles = {
     }
 };
 
-
-
-
-
 class Season extends Component {
     constructor(props){
         super(props);

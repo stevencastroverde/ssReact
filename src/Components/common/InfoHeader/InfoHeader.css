@@ -64,7 +64,8 @@
 .cast-list {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
     max-width: 90%;
     overflow: scroll;
     margin: 0 auto;

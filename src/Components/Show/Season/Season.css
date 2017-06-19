@@ -25,7 +25,9 @@
 
 
 .season-episodes {
-    background-color: firebrick;
+    border-left:solid 1px #898989;
+    border-right: solid 1px #898989;
+    border-bottom: solid 1px #898989;
     margin: 1%;
     padding: 1%;
 }

@@ -3,6 +3,7 @@ import InfoHeader from '../common/InfoHeader/InfoHeader';
 import Season from './Season/Season';
 import Loading from '../common/Loading/Loading';
 import ShowInfo from './ShowInfo/ShowInfo';
+import RelatedContent from '../common/RelatedContent/RelatedContent';
 import API from '../../API/apiCalls';
 
 
@@ -69,6 +70,11 @@ class ShowPage extends Component {
         })
     };
 
+    selectedShow = (e, showId) => {
+        let params = this.props.match.params;
+         this.props.history.push('/show/' + showId + '/' + params.subscriptions);
+    }
+
 
     render() {
         if(!this.state.showInfo){
@@ -80,9 +86,14 @@ class ShowPage extends Component {
                     <section className="show-info-seasons">
                         <div className="show-info-card">
                             <ShowInfo day={this.state.showInfo.air_day_of_week} time={this.state.showInfo.air_time} status={this.state.showInfo.status}/>
+                            <div className="related-shows">
+                            {this.state.relatedShows.map((show, i) => {
+                                return <RelatedContent key={show.id} title={show.title} thumbnail={show.artwork_304x171} isTv={true} id={show.id} selectRelated={this.selectedShow} />
+                            })}
+                            </div>
                         </div>
                         <div className="seasons">
-                            {this.state.seasons.map((season, i) => {
+                            {this.state.seasons.map((season) => {
                                return <Season key={season.season} {...season}/>
                             })}
                         </div>

@@ -6,6 +6,8 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.6);
 }
 
 .episode-info {
@@ -23,4 +25,14 @@
 
 .episode-info svg {
     fill: #fefefe;
+    height: 3.5em;
+    width: auto;
+}
+
+.episode-info svg:hover {
+    fill:#BD3F32;
+}
+
+#episode-link {
+    text-align: right;
 }

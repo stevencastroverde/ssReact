@@ -2,14 +2,16 @@
     display: flex;
     flex-flow: column nowrap ;
     justify-content: center;
+    align-items: center;
     margin: 1% 3%;
     text-align: center;
 }
 
 #headshot {
     border-radius: 50%;
-    width: auto;
-    height:4em;
+    border: solid 0.5px rgba(0,0,0,0.3);
+    width:5.3em;
+    height:5.3em;
 }
 
 .cast-member h3 {
