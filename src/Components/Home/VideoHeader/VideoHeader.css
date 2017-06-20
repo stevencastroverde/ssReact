@@ -1,0 +1,84 @@
+
+.homepage-hero-module {
+   max-width: 100%;
+    position: relative;
+}
+.homepage-hero-module video {
+    max-width: 100%;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+.stream-search-header {
+    text-align: center;
+    position: absolute;
+    top: 13%;
+    left:10%;
+    padding: 3% 7%;
+    margin: 2% auto;
+
+
+}
+
+.stream-search-header p {
+    font-size: 2.2em;
+    margin-bottom: 6%;
+    font-family: 'Open Sans', 'sans-serif';
+}
+
+.stream-search-header a {
+    background: #BD3F32;
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 1.5em ;
+    padding: 2%;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #e3e3e3;
+    text-shadow: 0 0 3px rgba(26,20,35,0.8);
+    transition: background .3s ease-in-out;
+}
+
+.stream-search-header a:hover {
+    background: #CB356B;
+}
+#video-title {
+    font-size: 7em;
+    font-family: 'Bowlby One SC', cursive;
+    color: #e3e3e3;
+    text-shadow: 0 0 3px rgba(26,20,35,0.9);
+    margin-bottom: 0;
+}
