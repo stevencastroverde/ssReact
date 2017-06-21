@@ -3,7 +3,7 @@ import './Gallery.css';
 
 import Button from './Button/Button';
 
-import bobsBurgers from '../../../images/Gallery/test.png';
+import bobsBurgers from '../../../images/homePage/Gallery/slideOne.png';
 
 const content = {
     0:{

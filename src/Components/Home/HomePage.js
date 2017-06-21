@@ -3,16 +3,17 @@ import './HomePage.css';
 
 import VideoHeader from './VideoHeader/VideoHeader';
 import Gallery from './Gallery/Gallery';
-
+//TODO: create images for gallery
+//TODO: add media queries and movie video on header
 //logos
-import amazon from '../../images/logos/amazon.png';
-import crunchyroll from '../../images/logos/crunchyroll.png';
-import dramafever from '../../images/logos/dramafever.png';
-import hbo from '../../images/logos/hbo.png';
-import hulu from '../../images/logos/hulu.png';
-import netflix from '../../images/logos/netflix.png';
-import starz from '../../images/logos/starz.png';
-import showtime from '../../images/logos/showtime.png';
+import amazon from '../../images/homePage/logos/amazon.png';
+import crunchyroll from '../../images/homePage/logos/crunchyroll.png';
+import dramafever from '../../images/homePage/logos/dramafever.png';
+import hbo from '../../images/homePage/logos/hbo.png';
+import hulu from '../../images/homePage/logos/hulu.png';
+import netflix from '../../images/homePage/logos/netflix.png';
+import starz from '../../images/homePage/logos/starz.png';
+import showtime from '../../images/homePage/logos/showtime.png';
 
 
 
@@ -27,7 +28,7 @@ class HomePage extends Component {
 
                     <VideoHeader />
                 </section>
-                <section className="home-movies">
+                <section className="source-description">
                     <div className="home-sources">
                         <img src={amazon} alt="amazon logo"/>
                         <img src={crunchyroll} alt="crunchy roll logo"/>
@@ -38,8 +39,9 @@ class HomePage extends Component {
                         <img src={starz} alt="starz logo"/>
                         <img src={showtime} alt="showtime logo"/>
                     </div>
-                    <div className="movie-paragraph">
-                        <h2>Find the movie you want when you want it</h2>
+                    <div className="sources-paragraph">
+                        <h2>What You Want When You Want</h2>
+                        <p>Stream Search lets you search nine of the top subscription video services all at once!</p>
 
                     </div>
                 </section>
