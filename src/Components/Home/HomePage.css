@@ -1,5 +1,5 @@
 .home-movies{
-    height: 80vh;
+    height: 50%;
     background-color: rgba(227,227,227,1);
     margin-top: -1%;
     z-index: 3;
@@ -36,10 +36,11 @@
 .home-sources > img {
     width: auto;
     height: 5em;
+    margin: 1% 2%;
 }
 
 .home-tv {
-    height: 80vh;
+    height: 40%;
     background: linear-gradient(  rgba(189,63,50, 0.94),  rgba(189,63,50, 0.94)),
     url('../../images/popcorn.jpg');
     color: #e3e3e3;

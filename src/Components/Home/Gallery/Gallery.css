@@ -1,5 +1,4 @@
 .gallery-container {
-    border: solid 3px black;
     display: flex;
     padding: 2%;
     flex-direction: row;
@@ -10,6 +9,7 @@
 .gallery-container img {
     max-width: 100%;
     height: auto;
+    margin: 0;
 }
 
 .buttons-and-text {
