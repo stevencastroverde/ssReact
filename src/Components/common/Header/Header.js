@@ -2,14 +2,30 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
+const linkStyles = {
+    base: {
+        color: '#fefefe',
+        textDecoration:'none',
+        padding: '2% 4%',
+        fontFamily: 'Open Sans , sans-serif'
+    },
+    active: {
+        color: 'black'
+
+    }
+
+}
+
 
 const Header = (props) => {
+
+
     return (
         <nav>
             <h1 id="stream-search">Stream Search</h1>
             <ul className="nav-links">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/search">Search</Link></li>
+            <li><Link to="/" className="target">Home</Link></li>
+            <li><Link to="/search" className="target" id="search">Search</Link></li>
             </ul>
         </nav>
 

@@ -1,0 +1,31 @@
+.gallery-container {
+    display: flex;
+    padding: 2%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 70%;
+}
+.gallery-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.buttons-and-text {
+    padding: 3%;
+    font-size: 2em;
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: 600;
+    width: 50%;
+}
+
+.buttons-and-text p {
+    font-size: 1.3rem;
+    line-height: 1.9;
+}
+
+ .buttons-and-text .buttons {
+    margin-bottom: 8%;
+     text-align: center;
+}

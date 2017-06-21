@@ -1,0 +1,50 @@
+.homepage-hero {
+    position: relative;
+    display: inline-block;
+}
+
+.header-video video {
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.stream-search-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: white;
+    font-weight: bold;
+
+}
+
+.stream-search-header p {
+    font-size: 2.2em;
+    margin-bottom: 6%;
+    font-family: 'Open Sans', 'sans-serif';
+    font-style: italic;
+}
+
+.stream-search-header a {
+    background: #BD3F32;
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 1.5em ;
+    padding: 2%;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #e3e3e3;
+    text-shadow: 0 0 3px rgba(26,20,35,0.8);
+    transition: background .3s ease-in-out;
+}
+
+.stream-search-header a:hover {
+    background: #CB356B;
+}
+
+#video-title {
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 6em;
+    text-shadow: 0 2px 3px #1a1423;
+    margin-bottom: 1%;
+}

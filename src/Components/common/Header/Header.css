@@ -2,24 +2,43 @@ nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
     background-color: #1A1423;
-    height: 8vh;
-    color: #fefefe;
+    height: 10vh;
+    color: #e3e3e3;
 }
 
 #stream-search {
     font-family: 'Nunito', 'sans-serif';
+    margin: 2%;
 }
 
 .nav-links {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    margin: 2% 5%;
 }
 
 .nav-links li {
     list-style: none;
+    padding: 2%;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #e3e3e3;
     font-family: 'Open Sans', 'sans-serif';
-    color: #fefefe;
+    margin: 0 7%;
+    padding: 2%;
+}
+
+.nav-links a:hover {
+    color: #CB356B;
+}
+
+.nav-links a:focus {
+    color: #1A1423;
+    text-shadow: 0 0 10px rgba(227,227,227, 0.9);
 }
