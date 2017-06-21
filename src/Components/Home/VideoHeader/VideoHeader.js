@@ -10,18 +10,21 @@ import scrollWebm from '../../../images/video/Scroll-It/WEBM/Scroll-It.webm'
 
 const VideoHeader = props => {
     return (
-        <div className="homepage-hero-module">
-                <div className="filter"></div>
-                <video autoPlay="true" loop="true" className="fillWidth" poster={scrollImages}>
+        <div className="homepage-hero">
+            <div className="filter"></div>
+            <div className="header-video">
+                <video autoPlay="true" loop="true" poster={scrollImages}>
                     <source src={scrollWebm} type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
                     <source src={scrollMp4} type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
                 </video>
-                <div className="stream-search-header">
-                    <h1 id="video-title">Stream Search</h1>
-                    <p>The best way to search all your video subscriptions</p>
-                    <Link to="/search" id="search">Start Searching Now</Link>
-                </div>
             </div>
+            <div className="stream-search-header">
+                <h1 id="video-title">Stream Search</h1>
+                <p>The best way to search all your video subscriptions</p>
+                <Link to="/search" id="search">Start Searching Now</Link>
+            </div>
+        </div>
+
     )
-}
+};
 export default VideoHeader
