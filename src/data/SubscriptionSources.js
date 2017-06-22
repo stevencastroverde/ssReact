@@ -39,6 +39,11 @@ const SubscriptionSources = [
 		value: 'showtime_subscription',
 		id:'showtime'
 	},
+    {
+        displayName: 'Free',
+        value: 'free',
+        id:'free'
+    },
 ];
 
 export default SubscriptionSources

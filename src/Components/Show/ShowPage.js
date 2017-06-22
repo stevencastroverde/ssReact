@@ -8,7 +8,7 @@ import API from '../../API/apiCalls';
 
 
 // Delete this dummy data
-import bobsBurgers from '../../dummyData/bobsBurgers';
+import bobsBurgers from '../../data/bobsBurgers';
 
 
 import './ShowPage.css';
