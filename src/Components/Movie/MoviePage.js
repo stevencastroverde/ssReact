@@ -4,7 +4,7 @@ import theMask from '../../data/theMask';
 import InfoHeader from '../common/InfoHeader/InfoHeader';
 import Loading from '../common/Loading/Loading';
 import MovieInfo from './MovieInfo/MovieInfo';
-import MovieImagesAndTrailers from './MovieImages/MovieImagesAndTrailers';
+import SourceCards from './SourceCards/SourceCards';
 
 import './MoviePage.css';
 
@@ -47,22 +47,30 @@ class MoviePage extends Component {
                        <InfoHeader {...this.state.movieInfo}/>
                    </section>
                    <section className="movie-content">
-                       <div>
+                       <div className="extra-info">
                        <MovieInfo
                            title={this.state.movieInfo.title}
                            year={this.state.movieInfo.release_year}
                            inTheaters={this.state.movieInfo.in_theaters}
                            directors={this.state.movieInfo.directors}/>
                        </div>
-                       <div>
-                           <img src={this.state.images.banners[0].medium.url} alt={this.state.movieInfo.title + ' banner'}/>
-                       </div>
-                       <div>
-                           <MovieImagesAndTrailers trailer={this.state.movieInfo.trailers.web[0].embed}
-                                                   trailerPoster={this.state.images.posters[0].medium}
-                                                   images={this.state.images.thumbnails}/>
+                       <div className="banner-trailer">
+                           <iframe
+                               src={this.state.movieInfo.trailers.web[0].embed}
+                               id="Example2"
+                               title="Example2"
+                               frameBorder="0"
+                               scrolling="no"
+                               marginHeight="0"
+                               marginWidth="0">
+                           </iframe>
                        </div>
 
+                        <SourceCards
+                            rentBuySources={this.state.movieInfo.purchase_web_sources}
+                            freeSources={this.state.movieInfo.free_web_sources}
+                            subscriptionSources={this.state.movieInfo.subscription_web_sources}
+                        />
                    </section>
                </div>
            )

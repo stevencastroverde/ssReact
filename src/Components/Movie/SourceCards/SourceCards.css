@@ -1,0 +1,8 @@
+.rent-buy {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    max-width: 100%;
+    overflow: scroll;
+}
