@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import API from '../../API/apiCalls';
-import theMask from '../../dummyData/theMask';
+import theMask from '../../data/theMask';
 import InfoHeader from '../common/InfoHeader/InfoHeader';
 import Loading from '../common/Loading/Loading';
 import MovieInfo from './MovieInfo/MovieInfo';

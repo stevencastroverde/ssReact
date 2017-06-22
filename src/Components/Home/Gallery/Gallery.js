@@ -4,6 +4,7 @@ import './Gallery.css';
 import Button from './Button/Button';
 
 import bobsBurgers from '../../../images/homePage/Gallery/slideOne.png';
+import freeContent from '../../../images/homePage/Gallery/freeContent.png';
 
 const content = {
     0:{
@@ -13,11 +14,11 @@ const content = {
     },
     1: {
         imageUrl:  bobsBurgers,
-        text: 'oh shit slide two',
-        header:''
+        text: 'All you need to do is hit play, and you will be taken to the video.',
+        header:'Go Directly to the Source'
     },
     2: {
-        imageUrl: bobsBurgers,
+        imageUrl: freeContent,
         text: `Don't subscribe to any streaming video services? No problem, you can still watch that latest episode by searching free resources like studio websites using Stream Search`,
         header: 'Search Free Resources'
     },
