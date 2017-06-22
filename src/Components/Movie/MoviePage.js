@@ -66,11 +66,13 @@ class MoviePage extends Component {
                            </iframe>
                        </div>
 
+                       <div className="avaliable-sources">
+
                         <SourceCards
                             rentBuySources={this.state.movieInfo.purchase_web_sources}
                             freeSources={this.state.movieInfo.free_web_sources}
-                            subscriptionSources={this.state.movieInfo.subscription_web_sources}
-                        />
+                            subscriptionSources={this.state.movieInfo.subscription_web_sources}/>
+                       </div>
                    </section>
                </div>
            )

@@ -24,3 +24,7 @@ body{
     height: 20em;
     box-shadow: 0px 2px 3px rgba(26,20,35,0.6);
 }
+
+.avaliable-sources {
+    max-width: 100%;
+}
