@@ -16,24 +16,25 @@ class MoviePage extends Component {
         };
     }
    componentWillMount(){
-       // let params = this.props.match.params;
-       // API.getSpecificMovie(params.id)
-       //     .then(response => {
-       //         this.setState({
-       //             movieInfo: response[0],
-       //             images: response[1],
-       //             relatedMovie: response[2].results
-       //         })
-       //         });
+       if(this.props.location.pathname === '/movie/39014/demo') {
 
-       this.setState ({
-           movieInfo: theMask[0],
-           images: theMask[1].results,
-           relatedMovies: theMask[2].results
+           this.setState ({
+               movieInfo: theMask[0],
+               images: theMask[1].results,
+               relatedMovies: theMask[2].results
 
-       })
-
-
+           })
+       } else {
+           let params = this.props.match.params;
+           API.getSpecificMovie(params.id)
+               .then(response => {
+                   this.setState({
+                       movieInfo: response[0],
+                       images: response[1],
+                       relatedMovie: response[2].results
+                   })
+               });
+       }
    }
 
 
@@ -57,12 +58,7 @@ class MoviePage extends Component {
                        <div className="banner-trailer">
                            <iframe
                                src={this.state.movieInfo.trailers.web[0].embed}
-                               id="Example2"
-                               title="Example2"
-                               frameBorder="0"
-                               scrolling="no"
-                               marginHeight="0"
-                               marginWidth="0">
+                                title={this.state.movieInfo.title + " trailer"} height="315" width="560"  frameborder="0">
                            </iframe>
                        </div>
 

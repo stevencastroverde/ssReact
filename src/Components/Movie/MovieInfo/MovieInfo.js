@@ -12,13 +12,14 @@ const MovieInfo = props => {
             <h5>{props.title}</h5>
             <h5>{props.year}</h5>
             <h5>{inTheaters}</h5>
+            <div className="director">
             <h5>{moreThanOneDirector} :</h5>
             {props.directors.map(person => {
                 return (
                         <h5  key={person.id} >{person.name}</h5>
                 )
             } )}
-
+            </div>
         </div>
     )
 }

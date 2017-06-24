@@ -1,8 +1,9 @@
-{
+ {
   "name": "ssreact",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "jest-cli": "^20.0.4",
     "prop-types": "^15.5.10",
     "react": "^15.6.0",
     "react-dom": "^15.6.0",
