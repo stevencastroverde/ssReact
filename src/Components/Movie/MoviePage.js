@@ -50,7 +50,7 @@ class MoviePage extends Component {
            return (
                <div>
                    <section>
-                       <InfoHeader {...this.state.movieInfo}/>
+                       <InfoHeader {...this.state.movieInfo} background={this.state.images.backgrounds[0].original.url}/>
                    </section>
                    <section className="movie-content">
                        <div className="extra-info">
@@ -58,12 +58,16 @@ class MoviePage extends Component {
                            title={this.state.movieInfo.title}
                            year={this.state.movieInfo.release_year}
                            inTheaters={this.state.movieInfo.in_theaters}
-                           directors={this.state.movieInfo.directors}/>
+                           directors={this.state.movieInfo.directors}
+                           metaCritic={this.state.movieInfo.metacritic}
+                           rottenTomatoes={this.state.movieInfo.rottentomatoes}
+                           commonSense={this.state.movieInfo.common_sense_media}
+                       />
                        </div>
                        <div className="banner-trailer">
                            <iframe
                                src={this.state.movieInfo.trailers.web[0].embed}
-                                title={this.state.movieInfo.title + " trailer"} height="315" width="560"  frameBorder="0">
+                                title={this.state.movieInfo.title + " trailer"} height="100%" width="100%"  frameBorder="0">
                            </iframe>
                        </div>
 
