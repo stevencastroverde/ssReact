@@ -1,7 +1,9 @@
 import React from 'react';
+import PropTypes from  'prop-types';
 import './Modal.css';
 import closeIcon from '../../../images/close.svg';
 import playIcon from '../../../images/play.svg';
+import { Link } from 'react-router-dom';
 
 const Modal = (props) => {
     if(!props.show){
@@ -11,17 +13,23 @@ const Modal = (props) => {
             <div className="modal-backdrop">
                 <div className="modal-content">
                     <img src={closeIcon} id="close-icon" onClick={props.onClose} alt="Close Icon"/>
-                    <h1>{props.title}</h1>
-                    <img src={props.thumbnail_608x342} alt={props.title + ' episode image'}/>
-                    <h4>{(props.duration / 60) + ' minutes'}</h4>
-                    <p>{props.overview}</p>
-                    <a target="_blank" rel="noopener noreferrer" href={props.subscription_web_sources[0].link}>
-                        <img alt="play icon" id="play-icon" src={playIcon}/>
-                    </a>
+                    <h3>{props.message.greeting}</h3>
+                    <p>{props.message.message}</p>
+                    <div className="modal-links">
+                    {props.message.links.map((link,i) => {
+                        return <Link to={link.route} key={i}><h4>{link.name}</h4></Link>
+                    })}
+                    </div>
                 </div>
             </div>
         );
     }
 
+};
+
+Modal.propTypes = {
+    onClose : PropTypes.func.isRequired,
+    message: PropTypes.object.isRequired,
+    show: PropTypes.bool.isRequired
 };
 export default Modal;

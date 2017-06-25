@@ -63,3 +63,34 @@
     font-weight: bold;
     font-size: 3em;
 }
+
+#please-read {
+    font-size: 4em;
+    font-family: 'Nunito', 'sans-serif';
+    border: none;
+    cursor: pointer;
+    background-color: yellow;
+    color: #222222;
+    width: 100%;
+    animation: 4s ease-in 3s infinite normal none shake;
+}
+
+#please-read:hover {
+    color: #bd3f32;
+}
+
+
+
+@keyframes shake {
+    from, to {
+        transform: translate3d(0, 0, 0);
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    20%, 40%, 60%, 80% {
+        transform: translate3d(10px, 0, 0);
+    }
+};
