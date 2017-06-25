@@ -37,11 +37,9 @@ class ShowPage extends Component {
     constructor(props){
         super(props);
         this.state ={
-            isOpen: false,
             clickedEpisode: null,
             loadingMessage: 'Finding you all the latest episodes'
         };
-        this.toggleModal = this.toggleModal.bind(this);
     }
     componentWillMount() {
         if(this.props.location.pathname === '/show/69/demo') {
@@ -65,14 +63,6 @@ class ShowPage extends Component {
         }
 
     }
-
-    toggleModal = (e ,index) => {
-        this.setState({
-            isOpen: !this.state.isOpen,
-            clickedEpisode: this.state.episodes[index]
-        })
-    };
-
     selectedShow = (e, showId) => {
         let params = this.props.match.params;
          this.props.history.push('/show/' + showId + '/' + params.subscriptions);

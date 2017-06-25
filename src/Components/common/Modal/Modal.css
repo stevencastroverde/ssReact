@@ -17,10 +17,40 @@
     background: -webkit-linear-gradient(to top, #232526, #414345);
     background: linear-gradient(to top, #232526, #414345);
     padding: 2% 4%;
+    border-radius: 15px;
+    font-size: 1.3em;
+    font-family: 'Open Sans', 'sans-serif';
+    color: #e3e3e3;
 }
 
-.modal-content h1 {
+.modal-content h3 {
     font-family: 'Nunito', 'sans-serif';
+}
+.modal-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.modal-content a {
+    text-decoration: none;
+    text-align: center;
+}
+.modal-content  h4 {
+    background-color: transparent;
+    border: solid 1px #bd3f32;
+    width: 200px;
+    margin: 5px 20px;
+    color: #898989;
+    padding: 1%;
+    transition: all .4s ease;
+
+
+}
+.modal-content h4:hover {
+    background-color: #bd3f32;
+    color: #e3e3e3;
+    border-radius: 10px;
+
 }
 
 #close-icon {
