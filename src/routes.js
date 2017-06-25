@@ -5,7 +5,6 @@ import HomePage from './Components/Home/HomePage';
 import SearchPage from './Components/Search/SearchPage';
 import MoviePage from './Components/Movie/MoviePage';
 import ShowPage from './Components/Show/ShowPage';
-import NotFound from './Components/NotFound/NotFound';
 
 const Routes = (props) => {
     return (

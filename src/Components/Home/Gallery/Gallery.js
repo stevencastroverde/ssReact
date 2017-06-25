@@ -45,7 +45,6 @@ class Gallery extends Component  {
 
 
    handleButtonClick = (e, indexOfSelectedButton) => {
-       console.log(e, indexOfSelectedButton)
       this.setState({
           currentSlideNumber:indexOfSelectedButton,
           slideData: content[indexOfSelectedButton]

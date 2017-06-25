@@ -44,22 +44,25 @@ class ShowPage extends Component {
         this.toggleModal = this.toggleModal.bind(this);
     }
     componentWillMount() {
+        if(this.props.location.pathname === '/show/69/demo') {
+            this.setState({
+                showInfo: bobsBurgers[0],
+                seasons: sortEpisodesBySeason(bobsBurgers[1].results),
+                relatedShows: bobsBurgers[3].results
 
-        // let params = this.props.match.params;
-        //  API.getSpecificShow(params.id, params.subscriptions)
-        //      .then(response => {
-        //          this.setState({
-        //              showInfo: response[0],
-        //              episodes: response[1].results,
-        //              relatedShows: response[3].results
-        //          });
-        //      })
-        this.setState({
-            showInfo: bobsBurgers[0],
-            seasons: sortEpisodesBySeason(bobsBurgers[1].results),
-            relatedShows: bobsBurgers[3].results
+            })
 
-        })
+        } else {
+            let params = this.props.match.params;
+             API.getSpecificShow(params.id, params.subscriptions)
+                 .then(response => {
+                     this.setState({
+                         showInfo: response[0],
+                         episodes: response[1].results,
+                         relatedShows: response[3].results
+                     });
+                 })
+        }
 
     }
 
@@ -73,7 +76,7 @@ class ShowPage extends Component {
     selectedShow = (e, showId) => {
         let params = this.props.match.params;
          this.props.history.push('/show/' + showId + '/' + params.subscriptions);
-    }
+    };
 
 
     render() {

@@ -49,6 +49,7 @@
 
 .home-tv {
     height: 40%;
+    text-align: center;
     background: linear-gradient(  rgba(189,63,50, 0.94),  rgba(189,63,50, 0.94)),
     url('../../images/homePage/popcorn.jpg');
     color: #e3e3e3;

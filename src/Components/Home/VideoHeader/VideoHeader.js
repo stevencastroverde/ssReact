@@ -3,7 +3,6 @@ import './VideoHeader.css';
 import { Link } from 'react-router-dom';
 
 import scrollMp4 from '../../../images/homePage/video/Scroll-It/MP4/Scroll-It.mp4';
-import scrollOgv from '../../../images/homePage/video/Scroll-It/OGV/Scroll-It.ogv';
 import scrollImages from '../../../images/homePage/video/Scroll-It/Snapshots/Scroll-It.jpg';
 import scrollWebm from '../../../images/homePage/video/Scroll-It/WEBM/Scroll-It.webm'
 

@@ -2,21 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
-const linkStyles = {
-    base: {
-        color: '#fefefe',
-        textDecoration:'none',
-        padding: '2% 4%',
-        fontFamily: 'Open Sans , sans-serif'
-    },
-    active: {
-        color: 'black'
-
-    }
-
-}
-
-
 const Header = (props) => {
 
 

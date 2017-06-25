@@ -2,22 +2,23 @@
     background: #CB356B;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: 29em;
+    height: 80%;
     padding: 5% 0;
     box-shadow: 0px 2px 3px rgba(0,0,0, 0.6);
 }
 
 .info-header-content{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     background: #232526; /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #232526, #414345); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #232526, #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     max-width: 90%;
-    max-height: 53vh;
+    padding: 2% 0;
+    height: 75%;
     margin: 0 auto;
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow:  0px 0px 4px rgba(0,0,0, 0.7);
     color: #fefefe;
 }
@@ -68,5 +69,5 @@
     align-items: center;
     max-width: 90%;
     overflow: scroll;
-    margin: 0 auto;
+    margin: 2% auto 0 auto;
 }

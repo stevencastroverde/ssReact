@@ -1,0 +1,15 @@
+.movie-sources h3 {
+    font-family: 'Nunito', 'sans-serif';
+    font-size: 3em;
+    margin: 0 2%;
+}
+
+
+
+.rent-buy, .free-sources , .subscription-sources {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 2%;
+}

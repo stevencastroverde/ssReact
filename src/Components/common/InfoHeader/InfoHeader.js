@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './InfoHeader.css';
 import Cast from '../Cast/Cast';
-
 
 
 const InfoHeader = (props) => {
@@ -20,7 +20,7 @@ const InfoHeader = (props) => {
                                 if(i === props.genres.length - 1){
                                return <span key={genre.id}>{genre.title}</span>
                             } else {
-                               return <span key={genre.id}>{genre.title}{', '}</span>
+                               return <span key={genre.id}>{genre.title}{' | '}</span>
                              }
                              }
                             )}
@@ -65,6 +65,8 @@ const InfoHeader = (props) => {
             </div>
         )
     }
-}
+};
+
+
 
 export default InfoHeader
