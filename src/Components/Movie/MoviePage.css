@@ -20,11 +20,26 @@ body{
 .banner-trailer iframe {
     position: absolute;
     top:0;
-    left: 0;
+    left: 20%;
     width: 100%;
     height: 100%;
 }
 
 .avaliable-sources {
     max-width: 100%;
+}
+.related-movies {
+    background-color: #898989;
+    font-family: 'Nunito', 'sans-serif';
+    font-size: 3em;
+    color: #e3e3e3;
+}
+.related-movie-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.related-movie {
+    margin: 0 1%;
 }

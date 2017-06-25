@@ -8,7 +8,7 @@ const Source = props => {
             return (
                 <div className="movie-source">
                     <a href={props.subscription.link} target="_blank" rel="noopener noreferrer">
-                        <h3>{props.subscription.display_name}</h3>
+                        <h4>{props.subscription.display_name}</h4>
                     </a>
                 </div>
             )
@@ -17,7 +17,7 @@ const Source = props => {
         return (
             <div className="movie-source">
                 <a href={props.free.link} target="_blank" rel="noopener noreferrer">
-                    <h3>{props.free.display_name}</h3>
+                    <h4>{props.free.display_name}</h4>
                 </a>
             </div>
         )
@@ -26,7 +26,7 @@ const Source = props => {
         return (
             <div className="rent-movie-source">
                 <a href={props.rentBuy.link} target="_blank" rel="noopener noreferrer">
-                    <h3>{props.rentBuy.display_name}</h3>
+                    <h4>{props.rentBuy.display_name}</h4>
                     <div className="tables">
                 {props.rentBuy.formats.map((source ,i) => {
                     return (

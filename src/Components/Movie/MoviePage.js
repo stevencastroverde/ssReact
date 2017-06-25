@@ -5,6 +5,7 @@ import InfoHeader from '../common/InfoHeader/InfoHeader';
 import Loading from '../common/Loading/Loading';
 import MovieInfo from './MovieInfo/MovieInfo';
 import SourceCards from './SourceCards/SourceCards';
+import RelatedContent from '../common/RelatedContent/RelatedContent';
 
 import './MoviePage.css';
 
@@ -36,6 +37,10 @@ class MoviePage extends Component {
                });
        }
    }
+    selectedMovie= (e, showId) => {
+        let params = this.props.match.params;
+        this.props.history.push('/show/' + showId + '/' + params.subscriptions);
+    };
 
 
     render() {
@@ -58,7 +63,7 @@ class MoviePage extends Component {
                        <div className="banner-trailer">
                            <iframe
                                src={this.state.movieInfo.trailers.web[0].embed}
-                                title={this.state.movieInfo.title + " trailer"} height="315" width="560"  frameborder="0">
+                                title={this.state.movieInfo.title + " trailer"} height="315" width="560"  frameBorder="0">
                            </iframe>
                        </div>
 
@@ -68,6 +73,14 @@ class MoviePage extends Component {
                             rentBuySources={this.state.movieInfo.purchase_web_sources}
                             freeSources={this.state.movieInfo.free_web_sources}
                             subscriptionSources={this.state.movieInfo.subscription_web_sources}/>
+                       </div>
+                   </section>
+                   <section className="related-movies">
+                       <h3>Related Movies</h3>
+                       <div className="related-movie-list">
+                       {this.state.relatedMovies.map(movie => {
+                           return <RelatedContent key={movie.id} isTV={false} thumbnail={movie.poster_240x342} title={movie.title} selectRelated={this.selectedMovie} id={movie.id}/>
+                       })}
                        </div>
                    </section>
                </div>

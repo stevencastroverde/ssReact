@@ -22,7 +22,7 @@ const SourceCards = props => {
     
     
     return (
-        <section>
+        <section className="movie-sources">
             <h3>Subscription Sources:</h3>
             <div className="subscription-sources">
                 {userSubscriptions}

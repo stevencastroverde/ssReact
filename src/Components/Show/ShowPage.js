@@ -76,7 +76,7 @@ class ShowPage extends Component {
     selectedShow = (e, showId) => {
         let params = this.props.match.params;
          this.props.history.push('/show/' + showId + '/' + params.subscriptions);
-    }
+    };
 
 
     render() {
