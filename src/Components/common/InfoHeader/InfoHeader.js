@@ -4,7 +4,6 @@ import './InfoHeader.css';
 import Cast from '../Cast/Cast';
 
 const InfoHeader = (props) => {
-    console.log(props)
     if(props.type === 'television') {
         return (
             <div className="background">
