@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from  'prop-types';
 import './Modal.css';
 import closeIcon from '../../../images/close.svg';
-import playIcon from '../../../images/play.svg';
 import { Link } from 'react-router-dom';
 
 const Modal = (props) => {
