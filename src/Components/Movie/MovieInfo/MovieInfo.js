@@ -11,11 +11,20 @@ const MovieInfo = props => {
     return (
         <div className="movie-info-card">
             <div className="movie-info">
-                <h5>{props.title}</h5>
-                <h5>{props.year}</h5>
-                <h5>{inTheaters}</h5>
+                <div>
+                    <h4>Title:</h4>
+                    <h5>{props.title}</h5>
+                </div>
+                <div>
+                    <h4>Year Released:</h4>
+                    <h5>{props.year}</h5>
+                </div>
+                <div>
+                    <h4>Currently Showing:</h4>
+                    <h5>{inTheaters}</h5>
+                </div>
                 <div className="director">
-                <h5>{moreThanOneDirector} :</h5>
+                <h4>{moreThanOneDirector}:</h4>
                 {props.directors.map(person => {
                     return (
                             <h5  key={person.id} >{person.name}</h5>

@@ -1,10 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 import './InfoHeader.css';
 import Cast from '../Cast/Cast';
 
-
 const InfoHeader = (props) => {
+    console.log(props)
     if(props.type === 'television') {
         return (
             <div className="background">
@@ -67,6 +67,16 @@ const InfoHeader = (props) => {
     }
 };
 
-
+InfoHeader.propTypes = {
+    objectWithShape: PropTypes.shape({
+        type: PropTypes.string,
+        poster: PropTypes.string,
+        title: PropTypes.string,
+        channels: PropTypes.arrayOf(PropTypes.object),
+        genre: PropTypes.arrayOf(PropTypes.object),
+        overview: PropTypes.string,
+        cast: PropTypes.arrayOf(PropTypes.object)
+    })
+};
 
 export default InfoHeader

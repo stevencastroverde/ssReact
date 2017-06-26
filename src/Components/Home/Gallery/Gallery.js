@@ -5,6 +5,8 @@ import Button from './Button/Button';
 
 import bobsBurgers from '../../../images/homePage/Gallery/slideOne.png';
 import freeContent from '../../../images/homePage/Gallery/freeContent.png';
+import videoDirect from '../../../images/homePage/Gallery/videoDirect.png';
+import rentBuy from '../../../images/homePage/Gallery/rentBuy.png';
 
 const content = {
     0:{
@@ -13,8 +15,8 @@ const content = {
         header: 'All the Content You Could Want'
     },
     1: {
-        imageUrl:  bobsBurgers,
-        text: 'All you need to do is hit play, and you will be taken to the video.',
+        imageUrl:  videoDirect,
+        text: 'All you need to do is hit play, and you will be taken to the video. No more scouring every service for a video. Let Stream Search do all the heavy lifting.',
         header:'Go Directly to the Source'
     },
     2: {
@@ -23,7 +25,7 @@ const content = {
         header: 'Search Free Resources'
     },
     3: {
-        imageUrl: bobsBurgers,
+        imageUrl: rentBuy,
         text: 'If the streaming service you have does not have the movie you want, Stream Search also shows you where you can rent or buy the movie!',
         header:'Buy and Rent Movies'
 
