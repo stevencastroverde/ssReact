@@ -15,9 +15,9 @@ const SearchBar = (props) => {
                         <div className="checkbox-list">
 								{SubscriptionSources.map((source, i) => {
 									return (
-									    <div>
+									    <div key={i}>
 											<input type="checkbox" id={source.id} name={source.value} className="checkbox" key={source.id} onChange={props.inputChange}/>
-                                            <label key={i} htmlFor={source.id}><span></span>{source.displayName}</label>
+                                            <label  htmlFor={source.id}><span></span>{source.displayName}</label>
                                             </div>
 
 									)

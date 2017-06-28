@@ -6,7 +6,7 @@ import './Source.css';
 const Source = props => {
     if(props.hasOwnProperty('subscription')){
             return (
-                <div className="movie-source">
+                <div className="movie-source subscription-source">
                     <a href={props.subscription.link} target="_blank" rel="noopener noreferrer">
                         <h4>{props.subscription.display_name}</h4>
                     </a>
@@ -15,7 +15,7 @@ const Source = props => {
 
     } else if (props.hasOwnProperty('free')){
         return (
-            <div className="movie-source">
+            <div className="movie-source free-source">
                 <a href={props.free.link} target="_blank" rel="noopener noreferrer">
                     <h4>{props.free.display_name}</h4>
                 </a>
