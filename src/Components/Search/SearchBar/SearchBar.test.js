@@ -12,11 +12,11 @@ describe('<SearchBar /> UI Component', () => {
         expect(wrapper.find('.checkbox')).toHaveLength(9);
     });
 
-    xit('invokes onSubmit', () => {
+    it('invokes onSubmit', () => {
         const _submit = jest.fn();
         shallow(<SearchBar onSubmit={_submit}/>)
             .find('[type="submit"]')
-            .simulate('click')
+            .simulate('submit');
 
             expect(_submit).toBeCalled()
 
