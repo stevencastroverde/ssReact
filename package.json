@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "jest-cli": "^20.0.4",
+    "jest-enzyme": "^3.4.0",
     "prop-types": "^15.5.10",
     "react": "^15.6.0",
     "react-dom": "^15.6.0",
@@ -12,7 +13,6 @@
   "devDependencies": {
     "enzyme": "^2.9.1",
     "jest-css-modules": "^1.1.0",
-    "react-addons-test-utils": "^15.6.0",
     "react-scripts": "1.0.7",
     "react-test-renderer": "^15.6.1"
   },
