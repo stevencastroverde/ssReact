@@ -22,15 +22,9 @@ describe('<SearchBar /> UI Component', () => {
 
     it('calls function on checkbox clicked', () => {
         const _checkbox = jest.fn();
-        const checkTest = {
-            type:'checkbox',
-            name:'test check',
-            checked: true,
-            value: 'poop'
-        };
         mount(<SearchBar inputChange={_checkbox}/>)
             .find('.checkbox').first()
-            .simulate('change', {target: checkTest});
+            .simulate('change');
         expect(_checkbox).toBeCalled()
     });
 
