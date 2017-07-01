@@ -1,3 +1,10 @@
-jest.dontMock('./Header.js');
+import React from 'react';
+import {shallow} from 'enzyme';
+import Header from './Header';
 
-describe
+describe('<Header/> UI Component', () => {
+    it('renders without crashing', () => {
+        shallow(<Header/>);
+    })
+
+});

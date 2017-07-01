@@ -9,7 +9,7 @@ import freeMovies from '../../data/freeMovies';
 
 class SearchPage extends Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {
             results: [],
             searchTerm: '',

@@ -56,7 +56,7 @@ class ShowPage extends Component {
                  .then(response => {
                      this.setState({
                          showInfo: response[0],
-                         episodes: response[1].results,
+                         seasons: sortEpisodesBySeason(response[1].results),
                          relatedShows: response[3].results
                      });
                  })
@@ -70,10 +70,7 @@ class ShowPage extends Component {
 
 
     render() {
-        if(!this.state.showInfo){
-            return <Loading message={this.state.loadingMessage} />
-        } else {
-            return (
+        return (!this.state.showInfo) ? <Loading message={this.state.loadingMessage}/> :
                 <div>
                     <InfoHeader {...this.state.showInfo}/>
                     <section className="show-info-seasons">
@@ -92,8 +89,7 @@ class ShowPage extends Component {
                         </div>
                     </section>
                 </div>
-            )
-        }
+
     }
 }
 

@@ -32,7 +32,7 @@ class MoviePage extends Component {
                    this.setState({
                        movieInfo: response[0],
                        images: response[1],
-                       relatedMovie: response[2].results
+                       relatedMovies: response[2].results
                    })
                });
        }
@@ -44,13 +44,10 @@ class MoviePage extends Component {
 
 
     render() {
-       if(!this.state.movieInfo){
-          return <Loading message={this.state.loadingMessage}/>
-       } else {
-           return (
+       return (!this.state.movieInfo) ? <Loading message={this.state.loadingMessage}/> :
                <div>
                    <section>
-                       <InfoHeader {...this.state.movieInfo} background={this.state.images.backgrounds[0].original.url}/>
+                       <InfoHeader {...this.state.movieInfo}/>
                    </section>
                    <section className="movie-content">
                        <div className="extra-info">
@@ -88,8 +85,6 @@ class MoviePage extends Component {
                        </div>
                    </section>
                </div>
-           )
-       }
     }
 }
 
