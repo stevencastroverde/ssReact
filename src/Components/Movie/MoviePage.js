@@ -62,12 +62,12 @@ class MoviePage extends Component {
                            commonSense={this.state.movieInfo.common_sense_media}
                        />
                        </div>
-                       <div className="banner-trailer">
-                           <iframe
-                               src={this.state.movieInfo.trailers.web[0].embed}
-                                title={this.state.movieInfo.title + " trailer"} height="100%" width="100%"  frameBorder="0">
-                           </iframe>
-                       </div>
+                       {/*<div className="banner-trailer">*/}
+                           {/*<iframe*/}
+                               {/*src={this.state.movieInfo.trailers.web[0].embed}*/}
+                                {/*title={this.state.movieInfo.title + " trailer"} height="100%" width="100%"  frameBorder="0">*/}
+                           {/*</iframe>*/}
+                       {/*</div>*/}
 
                        <div className="avaliable-sources">
 
