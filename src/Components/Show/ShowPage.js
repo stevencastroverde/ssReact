@@ -40,6 +40,7 @@ class ShowPage extends Component {
             clickedEpisode: null,
             loadingMessage: 'Finding you all the latest episodes'
         };
+        this.selectedShow = this.selectedShow.bind(this);
     }
     componentWillMount() {
         if(this.props.location.pathname === '/show/69/demo') {
@@ -63,9 +64,10 @@ class ShowPage extends Component {
         }
 
     }
-    selectedShow = (e, showId) => {
+    selectedShow(e, showId) {
         let params = this.props.match.params;
          this.props.history.push('/show/' + showId + '/' + params.subscriptions);
+         this.props.history.go();
     };
 
 
@@ -78,7 +80,7 @@ class ShowPage extends Component {
                             <ShowInfo day={this.state.showInfo.air_day_of_week} time={this.state.showInfo.air_time} status={this.state.showInfo.status}/>
                             <div className="related-shows">
                             {this.state.relatedShows.map((show, i) => {
-                                return <RelatedContent key={show.id} title={show.title} thumbnail={show.artwork_304x171} isTv={true} id={show.id} selectRelated={this.selectedShow} />
+                                return <RelatedContent key={show.id} title={show.title} thumbnail={show.artwork_304x171} isTV={true} id={show.id} selectRelated={this.selectedShow} />
                             })}
                             </div>
                         </div>
