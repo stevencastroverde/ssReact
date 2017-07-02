@@ -74,7 +74,9 @@ class MoviePage extends Component {
                         <SourceCards
                             rentBuySources={this.state.movieInfo.purchase_web_sources}
                             freeSources={this.state.movieInfo.free_web_sources}
-                            subscriptionSources={this.state.movieInfo.subscription_web_sources}/>
+                            subscriptionSources={this.state.movieInfo.subscription_web_sources}
+                            userSubscriptions={this.props.match.params.subscriptions}
+                        />
                        </div>
                    </section>
                    <section className="related-movies">

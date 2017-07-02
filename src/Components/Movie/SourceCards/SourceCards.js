@@ -13,12 +13,11 @@ const SourceCards = props => {
         <h4>Sorry we couldn't find anywhere where you can watch this movie for free</h4> :
         props.freeSources.map((source, i) => <Source key={'free ' + i} free={source}/>);
     const purchaseContent = props.rentBuySources.map((source, i) => <Source key={'rent/buy' + i} rentBuy={source}/>);
-
     return (
         <section className="movie-sources">
             <h3>Subscription Sources:</h3>
             <div className="subscription-sources">
-                {userSubscriptions}
+                {(props.userSubscriptions === 'free')? 'You Havent Selected Any Subscription Sources' : userSubscriptions}
             </div>
             <hr/>
             <h3>Free Sources:</h3>
@@ -39,7 +38,8 @@ const SourceCards = props => {
 SourceCards.propTypes = {
     subscriptionSources: PropTypes.arrayOf(PropTypes.object),
     freeSources: PropTypes.arrayOf(PropTypes.object),
-    rentBuySources: PropTypes.arrayOf(PropTypes.object).isRequired
+    rentBuySources: PropTypes.arrayOf(PropTypes.object).isRequired,
+    userSubscriptions: PropTypes.string
 
 };
 

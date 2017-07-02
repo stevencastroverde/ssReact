@@ -66,10 +66,11 @@ class SearchPage extends Component {
         }
     }
     selectCard(e, cardId, isShow){
+        let userSubscriptions = (this.state.subscriptions.length === 0)? 'free' : this.state.subscriptions.join();
         if(isShow){
-            this.props.history.push('/show/' + cardId + '/' + this.state.subscriptions.join());
+            this.props.history.push('/show/' + cardId + '/' + userSubscriptions );
         } else {
-            this.props.history.push('/movie/' + cardId + '/' + this.state.subscriptions.join());
+            this.props.history.push('/movie/' + cardId + '/' + userSubscriptions);
         }
     };
 
