@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import API from '../../API/apiCalls';
 import SearchBar from './SearchBar/SearchBar';
 import SearchResult from './SearchResult/SearchResult';
+import Loading from '../common/Loading/Loading';
 import './SearchPage.css';
 import freeShows from '../../data/freeShows';
 import freeMovies from '../../data/freeMovies';
@@ -83,7 +84,7 @@ class SearchPage extends Component {
             <div>
                 <SearchBar inputChange={this.handleCheckboxChange} submitSearch={this.handleSearch} radioCheck={this.selectSearchType}/>
                 <section className='results-grid'>
-                    {this.state && this.state.results &&
+                    { (!this.state.results) ? <Loading/> :
                         this.state.results.map((result) => <SearchResult key={result.id} {...result} chooseCard={this.selectCard}/>)}
                 </section>
             </div>
