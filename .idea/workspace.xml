@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f5075d1-2195-4aea-862f-775f52095ba9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/dexter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/Movie/MovieInfo/MovieInfo.css" afterPath="$PROJECT_DIR$/src/Components/Movie/MovieInfo/MovieInfo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/Movie/MoviePage.css" afterPath="$PROJECT_DIR$/src/Components/Movie/MoviePage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/Movie/MoviePage.js" afterPath="$PROJECT_DIR$/src/Components/Movie/MoviePage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/Show/ShowInfo/ShowInfo.css" afterPath="$PROJECT_DIR$/src/Components/Show/ShowInfo/ShowInfo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/Search/SearchPage.js" afterPath="$PROJECT_DIR$/src/Components/Search/SearchPage.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/common/Loading/Loading.css" afterPath="$PROJECT_DIR$/src/Components/common/Loading/Loading.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Components/common/Loading/Loading.js" afterPath="$PROJECT_DIR$/src/Components/common/Loading/Loading.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,107 +16,17 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="MoviePage.js" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/Components/Movie/MoviePage.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="335">
-                    <caret line="71" column="52" lean-forward="false" selection-start-line="71" selection-start-column="52" selection-end-line="71" selection-end-column="52" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="ShowInfo.js" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/Components/Show/ShowInfo/ShowInfo.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="150">
-                    <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="29" />
-                    <folding>
-                      <element signature="e#0#26#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Loading.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/common/Loading/Loading.css">
+      <file leaf-file-name="SearchPage.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Components/Search/SearchPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoviePage.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/Movie/MoviePage.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomePage.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/Home/HomePage.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1033">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VideoHeader.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/Home/VideoHeader/VideoHeader.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShowInfo.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Components/Show/ShowInfo/ShowInfo.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShowPage.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/Show/ShowPage.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MovieInfo.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Components/Movie/MovieInfo/MovieInfo.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-419">
-              <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-              <folding />
+            <state relative-caret-position="324">
+              <caret line="90" column="9" lean-forward="true" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,7 +52,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Components/common/Header/Header.js" />
         <option value="$PROJECT_DIR$/src/Components/Home/VideoHeader/VideoHeader.js" />
         <option value="$PROJECT_DIR$/src/Components/Home/Gallery/Gallery.css" />
         <option value="$PROJECT_DIR$/src/Components/common/RelatedContent/RelatedContent.css" />
@@ -177,7 +82,6 @@
         <option value="$PROJECT_DIR$/src/Components/common/RelatedContent/RelatedContent.test.js" />
         <option value="$PROJECT_DIR$/src/Components/Movie/SourceCards/Source/Source.js" />
         <option value="$PROJECT_DIR$/src/Components/Movie/SourceCards/Source/Source.test.js" />
-        <option value="$PROJECT_DIR$/src/Components/Search/SearchPage.js" />
         <option value="$PROJECT_DIR$/src/Components/Search/SearchPage.test.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/setupTests.js" />
@@ -192,11 +96,13 @@
         <option value="$PROJECT_DIR$/src/Components/Show/ShowPage.js" />
         <option value="$PROJECT_DIR$/src/data/dexter.js" />
         <option value="$PROJECT_DIR$/src/Components/Movie/MoviePage.js" />
-        <option value="$PROJECT_DIR$/src/Components/common/Loading/Loading.css" />
         <option value="$PROJECT_DIR$/src/Components/Movie/MovieInfo/MovieInfo.css" />
         <option value="$PROJECT_DIR$/src/Components/Movie/MoviePage.css" />
         <option value="$PROJECT_DIR$/src/Components/Show/ShowInfo/ShowInfo.js" />
         <option value="$PROJECT_DIR$/src/Components/Show/ShowInfo/ShowInfo.css" />
+        <option value="$PROJECT_DIR$/src/Components/common/Loading/Loading.js" />
+        <option value="$PROJECT_DIR$/src/Components/common/Loading/Loading.css" />
+        <option value="$PROJECT_DIR$/src/Components/Search/SearchPage.js" />
       </list>
     </option>
   </component>
@@ -300,11 +206,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Show" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ShowInfo" />
+              <option name="myItemId" value="Search" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -323,6 +225,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssreact" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ssreact" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -460,7 +384,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179396000" />
+    <option name="totallyTimeSpent" value="179869000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -549,7 +473,7 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -701,14 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Search/SearchPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/data/theMask.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -801,16 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/common/Loading/Loading.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/common/RelatedContent/RelatedContent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-16">
@@ -835,14 +741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Home/VideoHeader/VideoHeader.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/Show/ShowPage.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -859,10 +757,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Movie/MoviePage.js">
+    <entry file="file://$PROJECT_DIR$/src/Components/Show/ShowInfo/ShowInfo.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="71" column="52" lean-forward="false" selection-start-line="71" selection-start-column="52" selection-end-line="71" selection-end-column="52" />
+        <state relative-caret-position="225">
+          <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Home/VideoHeader/VideoHeader.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -885,9 +791,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Components/common/Loading/Loading.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="150">
+          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/common/Loading/Loading.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="65" lean-forward="false" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -901,11 +817,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Components/Show/ShowInfo/ShowInfo.css">
+    <entry file="file://$PROJECT_DIR$/src/Components/Movie/MoviePage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="16" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        <state relative-caret-position="335">
+          <caret line="71" column="52" lean-forward="false" selection-start-line="71" selection-start-column="52" selection-end-line="71" selection-end-column="52" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Components/Search/SearchPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="90" column="9" lean-forward="true" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

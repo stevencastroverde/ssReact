@@ -6,7 +6,6 @@ const Loading = (props) => {
     return (
         <div className="loading-animation">
             <img src={loadingAnimation} alt="loading animation"/>
-            <h2>{props.message}</h2>
         </div>
     )
 };
