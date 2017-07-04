@@ -49,7 +49,7 @@ const InfoHeader = (props) => {
                                     if(i === props.genres.length - 1){
                                         return <span key={genre.id}>{genre.title}</span>
                                     } else {
-                                        return <span key={genre.id}>{genre.title}{', '}</span>
+                                        return <span key={genre.id}>{genre.title}{' | '}</span>
                                     }
                                 }
                             )}

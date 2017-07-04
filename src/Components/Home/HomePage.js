@@ -22,8 +22,11 @@ const modalContent = {
     links: [
         {route: '/search/demo/tv', name:'Tv Search'},
         {route:'/search/demo/movies', name:'Movie Search'},
-        {route: '/show/69/demo', name:'TV Show'},
-        {route: '/movie/39014/demo', name:'Movie'}
+        {route: '/show/69/demo', name:'Bobs Burgers'},
+        {route: '/show/969/demo', name:'Survivor'},
+        {route: '/show/2072/demo', name:'Star Trek'},
+        {route: '/movie/39014/demo', name:'The Mask'},
+        {route: '/movie/71445/demo', name:'Lord of The Rings'}
     ]
 };
 

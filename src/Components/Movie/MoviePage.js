@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import API from '../../API/apiCalls';
 import theMask from '../../data/theMask';
+import lordOfTheRings from '../../data/lordOfTheRings';
 import InfoHeader from '../common/InfoHeader/InfoHeader';
 import Loading from '../common/Loading/Loading';
 import MovieInfo from './MovieInfo/MovieInfo';
@@ -25,7 +26,15 @@ class MoviePage extends Component {
                relatedMovies: theMask[2].results
 
            })
-       } else {
+       } else if (this.props.location.pathname === '/movie/71445/demo') {
+           this.setState ({
+               movieInfo: lordOfTheRings[0],
+               images: lordOfTheRings[1].results,
+               relatedMovies: lordOfTheRings[2].results
+
+           })
+       }
+       else {
            let params = this.props.match.params;
            API.getSpecificMovie(params.id)
                .then(response => {
