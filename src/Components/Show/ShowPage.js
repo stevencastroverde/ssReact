@@ -58,7 +58,7 @@ class ShowPage extends Component {
                      this.setState({
                          showInfo: response[0],
                          seasons: sortEpisodesBySeason(response[1].results),
-                         relatedShows: response[3].results
+                         relatedShows: response[2].results
                      });
                  })
         }

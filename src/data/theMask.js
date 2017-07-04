@@ -1,4 +1,4 @@
-const theMask = [
+[
     {
         "id": 39014,
         "title": "The Mask",
@@ -258,9 +258,35 @@ const theMask = [
         "tv_everywhere_web_sources": [],
         "tv_everywhere_ios_sources": [],
         "tv_everywhere_android_sources": [],
-        "subscription_web_sources": [],
-        "subscription_ios_sources": [],
-        "subscription_android_sources": [],
+        "subscription_web_sources": [
+            {
+                "source": "hulu_plus",
+                "display_name": "Hulu",
+                "link": "http://www.hulu.com/watch/1104513"
+            }
+        ],
+        "subscription_ios_sources": [
+            {
+                "source": "hulu_plus",
+                "display_name": "Hulu",
+                "link": "hulu://w/1104513",
+                "app_name": "Hulu",
+                "app_link": 1,
+                "app_required": 1,
+                "app_download_link": "itms-apps://itunes.apple.com/app/hulu-plus/id376510438"
+            }
+        ],
+        "subscription_android_sources": [
+            {
+                "source": "hulu_plus",
+                "display_name": "Hulu",
+                "link": "hulu://w/1104513",
+                "app_name": "Hulu",
+                "app_link": 1,
+                "app_required": 1,
+                "app_download_link": "https://play.google.com/store/apps/details?id=com.hulu.plus"
+            }
+        ],
         "purchase_web_sources": [
             {
                 "source": "itunes",
@@ -317,7 +343,7 @@ const theMask = [
                         "pre_order": false
                     },
                     {
-                        "price": "12.99",
+                        "price": "9.99",
                         "format": "HD",
                         "type": "purchase",
                         "pre_order": false
@@ -773,27 +799,30 @@ const theMask = [
                 "poster_400x570": "http://static-api.guidebox.com/120214/thumbnails_movies/-alt--25709-1741781570-8777569444-1734709945-large-400x570-alt-.jpg"
             },
             {
-                "id": 65812,
-                "title": "Charlie's Angels",
-                "release_year": 2000,
-                "themoviedb": 4327,
-                "original_title": "Charlie's Angels",
+                "id": 34092,
+                "title": "Ace Ventura: Pet Detective",
+                "release_year": 1994,
+                "themoviedb": 3049,
+                "original_title": "Ace Ventura: Pet Detective",
                 "alternate_titles": [
-                    "Charlie's Angels (2000)"
+                    "Ace Ventura - Pet Detective",
+                    "Ace Ventura Pet Detective",
+                    "Ace Ventura, Pet Detective",
+                    "Ace Ventura 1 Pet Detective"
                 ],
-                "imdb": "tt0160127",
+                "imdb": "tt0109040",
                 "pre_order": false,
                 "in_theaters": false,
-                "release_date": "2000-11-02",
+                "release_date": "1994-02-04",
                 "rating": "PG-13",
-                "rottentomatoes": 11062,
-                "freebase": "/m/01y9jr",
-                "wikipedia_id": 342692,
-                "metacritic": "http://www.metacritic.com/movie/charlies-angels",
-                "common_sense_media": "https://www.commonsensemedia.org/movie-reviews/charlies-angels",
-                "poster_120x171": "http://static-api.guidebox.com/thumbnails_movies_small/65812-8081836272-8868560260-6478858949-small-120x171.jpg",
-                "poster_240x342": "http://static-api.guidebox.com/thumbnails_movies_medium/65812-2887323876-6408331217-8280625171-medium-240x342.jpg",
-                "poster_400x570": "http://static-api.guidebox.com/thumbnails_movies/65812-9688157495-6983994073-6640246389-large-400x570.jpg"
+                "rottentomatoes": 10425,
+                "freebase": "/m/01xlh5",
+                "wikipedia_id": 336808,
+                "metacritic": "http://www.metacritic.com/movie/ace-ventura-pet-detective",
+                "common_sense_media": null,
+                "poster_120x171": "http://static-api.guidebox.com/thumbnails_movies_small/34092-7186517934-4859649935-2456782414-small-120x171.jpg",
+                "poster_240x342": "http://static-api.guidebox.com/thumbnails_movies_medium/34092-1988840630-799182528-8831039979-medium-240x342.jpg",
+                "poster_400x570": "http://static-api.guidebox.com/thumbnails_movies/34092-6086322572-5472433586-4222759577-large-400x570.jpg"
             },
             {
                 "id": 64130,
@@ -850,30 +879,28 @@ const theMask = [
                 "poster_400x570": "http://static-api.guidebox.com/thumbnails_movies/75219-9210045565-1540007899-9677476347-large-400x570.jpg"
             },
             {
-                "id": 34092,
-                "title": "Ace Ventura: Pet Detective",
-                "release_year": 1994,
-                "themoviedb": 3049,
-                "original_title": "Ace Ventura: Pet Detective",
+                "id": 380,
+                "title": "The Mask of Zorro",
+                "release_year": 1998,
+                "themoviedb": 9342,
+                "original_title": "The Mask of Zorro",
                 "alternate_titles": [
-                    "Ace Ventura - Pet Detective",
-                    "Ace Ventura Pet Detective",
-                    "Ace Ventura, Pet Detective",
-                    "Ace Ventura 1 Pet Detective"
+                    "Zorro - The Mask of Zorro",
+                    "Mask of Zorro, The"
                 ],
-                "imdb": "tt0109040",
+                "imdb": "tt0120746",
                 "pre_order": false,
                 "in_theaters": false,
-                "release_date": "1994-02-04",
+                "release_date": "1998-07-16",
                 "rating": "PG-13",
-                "rottentomatoes": 10425,
-                "freebase": "/m/01xlh5",
-                "wikipedia_id": 336808,
-                "metacritic": "http://www.metacritic.com/movie/ace-ventura-pet-detective",
-                "common_sense_media": null,
-                "poster_120x171": "http://static-api.guidebox.com/thumbnails_movies_small/34092-7186517934-4859649935-2456782414-small-120x171.jpg",
-                "poster_240x342": "http://static-api.guidebox.com/thumbnails_movies_medium/34092-1988840630-799182528-8831039979-medium-240x342.jpg",
-                "poster_400x570": "http://static-api.guidebox.com/thumbnails_movies/34092-6086322572-5472433586-4222759577-large-400x570.jpg"
+                "rottentomatoes": 22489,
+                "freebase": "/m/034b6k",
+                "wikipedia_id": 705756,
+                "metacritic": "http://www.metacritic.com/movie/the-mask-of-zorro",
+                "common_sense_media": "https://www.commonsensemedia.org/movie-reviews/the-mask-of-zorro",
+                "poster_120x171": "http://static-api.guidebox.com/thumbnails_movies_small/380-1048757611-9137029117-1793072354-large-120x171.jpg",
+                "poster_240x342": "http://static-api.guidebox.com/thumbnails_movies_medium/380-4004215761-7087374776-6968356399-large-240x342.jpg",
+                "poster_400x570": "http://static-api.guidebox.com/thumbnails_movies/380-9497563038-557390796-2395713679-large-400x570.jpg"
             },
             {
                 "id": 247,
@@ -899,6 +926,27 @@ const theMask = [
                 "poster_400x570": "http://static-api.guidebox.com/thumbnails_movies/247-1678543273-9841386163-8188780266-large-400x570.jpg"
             },
             {
+                "id": 48947,
+                "title": "Bruce Almighty",
+                "release_year": 2003,
+                "themoviedb": 310,
+                "original_title": "Bruce Almighty",
+                "alternate_titles": [],
+                "imdb": "tt0315327",
+                "pre_order": false,
+                "in_theaters": false,
+                "release_date": "2003-05-23",
+                "rating": "PG-13",
+                "rottentomatoes": 10528,
+                "freebase": "/m/01jft4",
+                "wikipedia_id": 237303,
+                "metacritic": "http://www.metacritic.com/movie/bruce-almighty",
+                "common_sense_media": "https://www.commonsensemedia.org/movie-reviews/bruce-almighty",
+                "poster_120x171": "http://static-api.guidebox.com/thumbnails_movies_small/48947-9730491759-5670523788-7957494999-small-120x171.jpg",
+                "poster_240x342": "http://static-api.guidebox.com/thumbnails_movies_medium/48947-8544606072-5833037235-4113084525-medium-240x342.jpg",
+                "poster_400x570": "http://static-api.guidebox.com/thumbnails_movies/48947-6577320797-9375267452-6409731814-large-400x570.jpg"
+            },
+            {
                 "id": 94092,
                 "title": "Dumb and Dumber To",
                 "release_year": 2014,
@@ -922,49 +970,27 @@ const theMask = [
                 "poster_400x570": "http://static-api.guidebox.com/120214/thumbnails_movies/-alt--94092-429025265-4735016199-5403157482-large-400x570-alt-.jpg"
             },
             {
-                "id": 48947,
-                "title": "Bruce Almighty",
-                "release_year": 2003,
-                "themoviedb": 310,
-                "original_title": "Bruce Almighty",
-                "alternate_titles": [],
-                "imdb": "tt0315327",
-                "pre_order": false,
-                "in_theaters": false,
-                "release_date": "2003-05-23",
-                "rating": "PG-13",
-                "rottentomatoes": 10528,
-                "freebase": "/m/01jft4",
-                "wikipedia_id": 237303,
-                "metacritic": "http://www.metacritic.com/movie/bruce-almighty",
-                "common_sense_media": "https://www.commonsensemedia.org/movie-reviews/bruce-almighty",
-                "poster_120x171": "http://static-api.guidebox.com/thumbnails_movies_small/48947-9730491759-5670523788-7957494999-small-120x171.jpg",
-                "poster_240x342": "http://static-api.guidebox.com/thumbnails_movies_medium/48947-8544606072-5833037235-4113084525-medium-240x342.jpg",
-                "poster_400x570": "http://static-api.guidebox.com/thumbnails_movies/48947-6577320797-9375267452-6409731814-large-400x570.jpg"
-            },
-            {
-                "id": 1406,
-                "title": "Charlie's Angels: Full Throttle",
-                "release_year": 2003,
-                "themoviedb": 9471,
-                "original_title": "Charlie's Angels: Full Throttle",
+                "id": 65812,
+                "title": "Charlie's Angels",
+                "release_year": 2000,
+                "themoviedb": 4327,
+                "original_title": "Charlie's Angels",
                 "alternate_titles": [
-                    "Charlie's Angels Full Throttle",
-                    "Charlie's Angels - Full Throttle"
+                    "Charlie's Angels (2000)"
                 ],
-                "imdb": "tt0305357",
+                "imdb": "tt0160127",
                 "pre_order": false,
                 "in_theaters": false,
-                "release_date": "2003-06-27",
+                "release_date": "2000-11-02",
                 "rating": "PG-13",
-                "rottentomatoes": 17226,
-                "freebase": "/m/01l_pn",
-                "wikipedia_id": 256337,
-                "metacritic": "http://www.metacritic.com/movie/charlies-angels-full-throttle",
-                "common_sense_media": "https://www.commonsensemedia.org/movie-reviews/charlies-angels-full-throttle",
-                "poster_120x171": "http://static-api.guidebox.com/thumbnails_movies_small/1406-3350850651-7515792716-8807562692-large-120x171.jpg",
-                "poster_240x342": "http://static-api.guidebox.com/thumbnails_movies_medium/1406-214076164-2609297750-6202282798-large-240x342.jpg",
-                "poster_400x570": "http://static-api.guidebox.com/thumbnails_movies/1406-692169397-6107059638-7095233304-large-400x570.jpg"
+                "rottentomatoes": 11062,
+                "freebase": "/m/01y9jr",
+                "wikipedia_id": 342692,
+                "metacritic": "http://www.metacritic.com/movie/charlies-angels",
+                "common_sense_media": "https://www.commonsensemedia.org/movie-reviews/charlies-angels",
+                "poster_120x171": "http://static-api.guidebox.com/thumbnails_movies_small/65812-8081836272-8868560260-6478858949-small-120x171.jpg",
+                "poster_240x342": "http://static-api.guidebox.com/thumbnails_movies_medium/65812-2887323876-6408331217-8280625171-medium-240x342.jpg",
+                "poster_400x570": "http://static-api.guidebox.com/thumbnails_movies/65812-9688157495-6983994073-6640246389-large-400x570.jpg"
             },
             {
                 "id": 58945,
@@ -991,28 +1017,53 @@ const theMask = [
                 "poster_400x570": "http://static-api.guidebox.com/thumbnails_movies/58945-7107216203-3150910894-5667327088-large-400x570.jpg"
             },
             {
-                "id": 380,
-                "title": "The Mask of Zorro",
-                "release_year": 1998,
-                "themoviedb": 9342,
-                "original_title": "The Mask of Zorro",
+                "id": 51783,
+                "title": "The Number 23",
+                "release_year": 2007,
+                "themoviedb": 3594,
+                "original_title": "The Number 23",
                 "alternate_titles": [
-                    "Zorro - The Mask of Zorro",
-                    "Mask of Zorro, The"
+                    "Number 23, The",
+                    "The Number 23 (2007)"
                 ],
-                "imdb": "tt0120746",
+                "imdb": "tt0481369",
                 "pre_order": false,
                 "in_theaters": false,
-                "release_date": "1998-07-16",
+                "release_date": "2007-02-23",
+                "rating": "R",
+                "rottentomatoes": 387392215,
+                "freebase": "/m/0c4mcp",
+                "wikipedia_id": 4476914,
+                "metacritic": "http://www.metacritic.com/movie/the-number-23",
+                "common_sense_media": "https://www.commonsensemedia.org/movie-reviews/the-number-23",
+                "poster_120x171": "http://static-api.guidebox.com/thumbnails_movies_small/51783-5454139668-6444560760-8226263490-small-120x171.jpg",
+                "poster_240x342": "http://static-api.guidebox.com/thumbnails_movies_medium/51783-3045265959-9234496760-7207519728-medium-240x342.jpg",
+                "poster_400x570": "http://static-api.guidebox.com/thumbnails_movies/51783-297471206-315110931-4983135597-large-400x570.jpg"
+            },
+            {
+                "id": 30609,
+                "title": "Ace Ventura: When Nature Calls",
+                "release_year": 1995,
+                "themoviedb": 9273,
+                "original_title": "Ace Ventura: When Nature Calls",
+                "alternate_titles": [
+                    "Ace Ventura - When Nature Calls",
+                    "Ace Ventura 2: When Nature Calls",
+                    "Ace Ventura 2:  When Nature Calls"
+                ],
+                "imdb": "tt0112281",
+                "pre_order": false,
+                "in_theaters": false,
+                "release_date": "1995-11-10",
                 "rating": "PG-13",
-                "rottentomatoes": 22489,
-                "freebase": "/m/034b6k",
-                "wikipedia_id": 705756,
-                "metacritic": "http://www.metacritic.com/movie/the-mask-of-zorro",
-                "common_sense_media": "https://www.commonsensemedia.org/movie-reviews/the-mask-of-zorro",
-                "poster_120x171": "http://static-api.guidebox.com/thumbnails_movies_small/380-1048757611-9137029117-1793072354-large-120x171.jpg",
-                "poster_240x342": "http://static-api.guidebox.com/thumbnails_movies_medium/380-4004215761-7087374776-6968356399-large-240x342.jpg",
-                "poster_400x570": "http://static-api.guidebox.com/thumbnails_movies/380-9497563038-557390796-2395713679-large-400x570.jpg"
+                "rottentomatoes": 10604,
+                "freebase": "/m/02mvb2",
+                "wikipedia_id": 537416,
+                "metacritic": "http://www.metacritic.com/movie/ace-ventura-when-nature-calls",
+                "common_sense_media": null,
+                "poster_120x171": "http://static-api.guidebox.com/thumbnails_movies_small/30609-5677310363-4410895421-6624399787-small-120x171.jpg",
+                "poster_240x342": "http://static-api.guidebox.com/thumbnails_movies_medium/30609-6127758645-5907618618-1306427466-medium-240x342.jpg",
+                "poster_400x570": "http://static-api.guidebox.com/thumbnails_movies/30609-4610766321-7271615267-402999833-large-400x570.jpg"
             },
             {
                 "id": 53131,
@@ -1036,28 +1087,25 @@ const theMask = [
                 "poster_400x570": "http://static-api.guidebox.com/120214/thumbnails_movies/-alt--53131-7855066959-9260781458-6246448425-large-400x570-alt-.jpg"
             },
             {
-                "id": 51783,
-                "title": "The Number 23",
-                "release_year": 2007,
-                "themoviedb": 3594,
-                "original_title": "The Number 23",
-                "alternate_titles": [
-                    "Number 23, The",
-                    "The Number 23 (2007)"
-                ],
-                "imdb": "tt0481369",
+                "id": 620,
+                "title": "Meet the Parents",
+                "release_year": 2000,
+                "themoviedb": 1597,
+                "original_title": "Meet the Parents",
+                "alternate_titles": [],
+                "imdb": "tt0212338",
                 "pre_order": false,
                 "in_theaters": false,
-                "release_date": "2007-02-23",
-                "rating": "R",
-                "rottentomatoes": 387392215,
-                "freebase": "/m/0c4mcp",
-                "wikipedia_id": 4476914,
-                "metacritic": "http://www.metacritic.com/movie/the-number-23",
-                "common_sense_media": "https://www.commonsensemedia.org/movie-reviews/the-number-23",
-                "poster_120x171": "http://static-api.guidebox.com/thumbnails_movies_small/51783-5454139668-6444560760-8226263490-small-120x171.jpg",
-                "poster_240x342": "http://static-api.guidebox.com/thumbnails_movies_medium/51783-3045265959-9234496760-7207519728-medium-240x342.jpg",
-                "poster_400x570": "http://static-api.guidebox.com/thumbnails_movies/51783-297471206-315110931-4983135597-large-400x570.jpg"
+                "release_date": "2000-10-06",
+                "rating": "PG-13",
+                "rottentomatoes": 10945,
+                "freebase": "/m/033fqh",
+                "wikipedia_id": 695023,
+                "metacritic": "http://www.metacritic.com/movie/meet-the-parents",
+                "common_sense_media": "https://www.commonsensemedia.org/movie-reviews/meet-the-parents",
+                "poster_120x171": "http://static-api.guidebox.com/thumbnails_movies_small/620-3620672436-723241494-5137520316-large-120x171.jpg",
+                "poster_240x342": "http://static-api.guidebox.com/thumbnails_movies_medium/620-9151467606-1133828801-2594338134-large-240x342.jpg",
+                "poster_400x570": "http://static-api.guidebox.com/thumbnails_movies/620-3750289478-6739809527-1575520276-large-400x570.jpg"
             },
             {
                 "id": 52499,
@@ -1085,27 +1133,6 @@ const theMask = [
                 "poster_400x570": "http://static-api.guidebox.com/thumbnails_movies/52499-7524280445-5035979059-1836436484-large-400x570.jpg"
             },
             {
-                "id": 620,
-                "title": "Meet the Parents",
-                "release_year": 2000,
-                "themoviedb": 1597,
-                "original_title": "Meet the Parents",
-                "alternate_titles": [],
-                "imdb": "tt0212338",
-                "pre_order": false,
-                "in_theaters": false,
-                "release_date": "2000-10-06",
-                "rating": "PG-13",
-                "rottentomatoes": 10945,
-                "freebase": "/m/033fqh",
-                "wikipedia_id": 695023,
-                "metacritic": "http://www.metacritic.com/movie/meet-the-parents",
-                "common_sense_media": "https://www.commonsensemedia.org/movie-reviews/meet-the-parents",
-                "poster_120x171": "http://static-api.guidebox.com/thumbnails_movies_small/620-3620672436-723241494-5137520316-large-120x171.jpg",
-                "poster_240x342": "http://static-api.guidebox.com/thumbnails_movies_medium/620-9151467606-1133828801-2594338134-large-240x342.jpg",
-                "poster_400x570": "http://static-api.guidebox.com/thumbnails_movies/620-3750289478-6739809527-1575520276-large-400x570.jpg"
-            },
-            {
                 "id": 22687,
                 "title": "Meet the Fockers",
                 "release_year": 2004,
@@ -1131,29 +1158,28 @@ const theMask = [
                 "poster_400x570": "http://static-api.guidebox.com/thumbnails_movies/22687-4333525072-8661619024-6449635331-large-400x570.jpg"
             },
             {
-                "id": 30609,
-                "title": "Ace Ventura: When Nature Calls",
-                "release_year": 1995,
-                "themoviedb": 9273,
-                "original_title": "Ace Ventura: When Nature Calls",
+                "id": 1406,
+                "title": "Charlie's Angels: Full Throttle",
+                "release_year": 2003,
+                "themoviedb": 9471,
+                "original_title": "Charlie's Angels: Full Throttle",
                 "alternate_titles": [
-                    "Ace Ventura - When Nature Calls",
-                    "Ace Ventura 2: When Nature Calls",
-                    "Ace Ventura 2:  When Nature Calls"
+                    "Charlie's Angels Full Throttle",
+                    "Charlie's Angels - Full Throttle"
                 ],
-                "imdb": "tt0112281",
+                "imdb": "tt0305357",
                 "pre_order": false,
                 "in_theaters": false,
-                "release_date": "1995-11-10",
+                "release_date": "2003-06-27",
                 "rating": "PG-13",
-                "rottentomatoes": 10604,
-                "freebase": "/m/02mvb2",
-                "wikipedia_id": 537416,
-                "metacritic": "http://www.metacritic.com/movie/ace-ventura-when-nature-calls",
-                "common_sense_media": null,
-                "poster_120x171": "http://static-api.guidebox.com/thumbnails_movies_small/30609-5677310363-4410895421-6624399787-small-120x171.jpg",
-                "poster_240x342": "http://static-api.guidebox.com/thumbnails_movies_medium/30609-6127758645-5907618618-1306427466-medium-240x342.jpg",
-                "poster_400x570": "http://static-api.guidebox.com/thumbnails_movies/30609-4610766321-7271615267-402999833-large-400x570.jpg"
+                "rottentomatoes": 17226,
+                "freebase": "/m/01l_pn",
+                "wikipedia_id": 256337,
+                "metacritic": "http://www.metacritic.com/movie/charlies-angels-full-throttle",
+                "common_sense_media": "https://www.commonsensemedia.org/movie-reviews/charlies-angels-full-throttle",
+                "poster_120x171": "http://static-api.guidebox.com/thumbnails_movies_small/1406-3350850651-7515792716-8807562692-large-120x171.jpg",
+                "poster_240x342": "http://static-api.guidebox.com/thumbnails_movies_medium/1406-214076164-2609297750-6202282798-large-240x342.jpg",
+                "poster_400x570": "http://static-api.guidebox.com/thumbnails_movies/1406-692169397-6107059638-7095233304-large-400x570.jpg"
             },
             {
                 "id": 54423,
@@ -1231,5 +1257,3 @@ const theMask = [
         ]
     }
 ]
-
-export default theMask;
