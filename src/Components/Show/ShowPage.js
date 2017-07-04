@@ -9,6 +9,8 @@ import API from '../../API/apiCalls';
 
 // Delete this dummy data
 import bobsBurgers from '../../data/bobsBurgers';
+import survivor from '../../data/survivor';
+import starTrek from '../../data/starTrek';
 
 
 import './ShowPage.css';
@@ -47,11 +49,27 @@ class ShowPage extends Component {
             this.setState({
                 showInfo: bobsBurgers[0],
                 seasons: sortEpisodesBySeason(bobsBurgers[1].results),
-                relatedShows: bobsBurgers[3].results
+                relatedShows: bobsBurgers[2].results
 
             })
 
-        } else {
+        } else if (this.props.location.pathname === '/show/969/demo') {
+            this.setState({
+                showInfo: survivor[0],
+                seasons: sortEpisodesBySeason(survivor[1].results),
+                relatedShows: survivor[2].results
+
+            })
+        }
+        else if (this.props.location.pathname === '/show/2072/demo') {
+            this.setState({
+                showInfo: starTrek[0],
+                seasons: sortEpisodesBySeason(starTrek[1].results),
+                relatedShows: starTrek[2].results
+
+            })
+        }
+        else {
             let params = this.props.match.params;
              API.getSpecificShow(params.id, params.subscriptions)
                  .then(response => {

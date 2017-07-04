@@ -1,4 +1,4 @@
-[
+const survivor =[
     {
         "id": 969,
         "title": "Survivor",
@@ -8,11 +8,95 @@
         "container_show": 0,
         "first_aired": "2000-05-31",
         "network": "CBS",
-        "channels": [],
+        "channels": [
+            {
+                "id": 3,
+                "name": "CBS",
+                "short_name": "cbs",
+                "channel_type": "television",
+                "artwork_208x117": "http://static-api.guidebox.com/041014/thumbnails_small/3-2487872262-208x117-channel.jpg",
+                "artwork_304x171": "http://static-api.guidebox.com/041014/thumbnails_medium/3-9571565720-304x171-channel.jpg",
+                "artwork_448x252": "http://static-api.guidebox.com/041014/thumbnails_large/3-8629465820-448x252-channel.jpg",
+                "artwork_608x342": "http://static-api.guidebox.com/041014/thumbnails_xlarge/3-8213735870-608x342-channel.jpg",
+                "external_ids": {
+                    "imdb": "co0070627",
+                    "wikipedia_id": 37653
+                },
+                "social": {
+                    "facebook": {
+                        "facebook_id": 47360808996,
+                        "link": "https://www.facebook.com/CBS"
+                    },
+                    "twitter": {
+                        "twitter_id": 97739866,
+                        "link": "https://twitter.com/CBS"
+                    }
+                },
+                "live_stream": {
+                    "web": [
+                        {
+                            "source": "cbs_all_access",
+                            "display_name": "CBS All Access",
+                            "type": "subscription",
+                            "link": "http://www.cbs.com/live-tv/",
+                            "link_type": "web"
+                        }
+                    ],
+                    "ios": [],
+                    "android": []
+                },
+                "is_primary": 1
+            }
+        ],
         "runtime": 60,
-        "genres": [],
-        "tags": [],
-        "cast": [],
+        "genres": [
+            {
+                "id": 19,
+                "title": "Reality"
+            }
+        ],
+        "tags": [
+            {
+                "id": 1199,
+                "tag": "reality competition"
+            },
+            {
+                "id": 2142,
+                "tag": "survivor"
+            },
+            {
+                "id": 942,
+                "tag": "island"
+            },
+            {
+                "id": 961,
+                "tag": "team"
+            },
+            {
+                "id": 6271,
+                "tag": "immunity"
+            },
+            {
+                "id": 1123,
+                "tag": "beach"
+            },
+            {
+                "id": 2448,
+                "tag": "2000s"
+            },
+            {
+                "id": 6822,
+                "tag": "reality television"
+            }
+        ],
+        "cast": [
+            {
+                "id": 229714,
+                "name": "Jeff Probst",
+                "character_name": "Host / Himself",
+                "image": "https://static-api.guidebox.com/091414/thumbnails_people/57020-9314286420-9002778101-1954582776-large-405x600.jpg"
+            }
+        ],
         "overview": "Sixteen or more castaways are split between two or more \"Tribes\", are taken to a remote isolated location and are forced to live off the land with meager supplies for roughly 39 days. Frequent physical challenges are used to pit the tribes against each other for Rewards, such as food or luxuries, or for \"Immunity\", forcing the other tribe to attend \"Tribal Council\", where they must vote off one of their players. Once about half the players are remaining, the tribes are merged into a single tribe, and competitions are on an individual basis; winning Immunity prevents that player from being voted out, while several that are voted out at this stage form the game's \"Jury\". Once down to two or three people, a Final Tribal Council is held where the remaining players plead their case to the jury members. The jury then votes for which player should be considered the \"Sole Survivor\" and win the $1 million prize. Survivor has introduced numerous modifications, or \"twists\", on the core rules in order to keep the players on their toes and to prevent players from relying on strategies that succeeded in prior seasons. These changes have included tribal switches, seasons starting with more than two tribes, the ability to exile a player from a tribe for a short time, Hidden Immunity Idols that players can use to save themselves at Tribal Council and a chance to return to regular gameplay after elimination through \"Redemption Island\".",
         "air_day_of_week": "Wednesday",
         "air_time": "8:00 PM",
@@ -9254,5 +9338,196 @@
             }
         ]
     },
-    {}
+    {
+        "total_results": 9,
+        "total_returned": 9,
+        "results": [
+            {
+                "id": 951,
+                "title": "Big Brother",
+                "alternate_titles": [],
+                "container_show": 0,
+                "first_aired": "2000-07-01",
+                "imdb_id": "tt0251497",
+                "tvdb": 76706,
+                "themoviedb": 10160,
+                "freebase": "/m/03j5xv",
+                "wikipedia_id": 860916,
+                "tvrage": {
+                    "tvrage_id": 2787,
+                    "link": "http://www.tvrage.com/shows/id-2787"
+                },
+                "artwork_208x117": "http://static-api.guidebox.com/thumbnails_small/951-9036369002-208x117.jpg",
+                "artwork_304x171": "http://static-api.guidebox.com/thumbnails_medium/951-7354335831-304x171.jpg",
+                "artwork_448x252": "http://static-api.guidebox.com/thumbnails_large/951-9009355688-448x252.jpg",
+                "artwork_608x342": "http://static-api.guidebox.com/thumbnails_xlarge/951-6340185450-608x342.jpg"
+            },
+            {
+                "id": 949,
+                "title": "The Amazing Race",
+                "alternate_titles": [
+                    "Amazing Race"
+                ],
+                "container_show": 0,
+                "first_aired": "2001-09-05",
+                "imdb_id": "tt0285335",
+                "tvdb": 77666,
+                "themoviedb": 30957,
+                "freebase": "/m/07s8z_l",
+                "wikipedia_id": 10120207,
+                "tvrage": {
+                    "tvrage_id": 5566,
+                    "link": "http://www.tvrage.com/shows/id-5566"
+                },
+                "artwork_208x117": "http://static-api.guidebox.com/120214/thumbnails_small/949-6635292824-208x117-show-thumbnail.jpg",
+                "artwork_304x171": "http://static-api.guidebox.com/120214/thumbnails_medium/949-9252933804-304x171-show-thumbnail.jpg",
+                "artwork_448x252": "http://static-api.guidebox.com/120214/thumbnails_large/949-8459383719-448x252-show-thumbnail.jpg",
+                "artwork_608x342": "http://static-api.guidebox.com/120214/thumbnails_xlarge/949-278685899-608x342-show-thumbnail.jpg"
+            },
+            {
+                "id": 218,
+                "title": "Fear Factor",
+                "alternate_titles": [],
+                "container_show": 0,
+                "first_aired": "2001-06-11",
+                "imdb_id": "tt0278191",
+                "tvdb": 76707,
+                "themoviedb": 320,
+                "freebase": "/m/02ydjr",
+                "wikipedia_id": 629176,
+                "tvrage": {
+                    "tvrage_id": 3533,
+                    "link": "http://www.tvrage.com/shows/id-3533"
+                },
+                "artwork_208x117": "http://static-api.guidebox.com/thumbnails_small/218-6034509335-208x117.jpg",
+                "artwork_304x171": "http://static-api.guidebox.com/thumbnails_medium/218-6153288400-304x171.jpg",
+                "artwork_448x252": "http://static-api.guidebox.com/thumbnails_large/218-880263155-448x252.jpg",
+                "artwork_608x342": "http://static-api.guidebox.com/thumbnails_xlarge/218-9987488491-608x342.jpg"
+            },
+            {
+                "id": 480,
+                "title": "Top Shot",
+                "alternate_titles": [
+                    "Top Shot All-Stars"
+                ],
+                "container_show": 0,
+                "first_aired": "2010-06-06",
+                "imdb_id": "tt1569972",
+                "tvdb": 165841,
+                "themoviedb": 32927,
+                "freebase": "/m/0c3vkwq",
+                "wikipedia_id": 27592364,
+                "tvrage": {
+                    "tvrage_id": 24826,
+                    "link": "http://www.tvrage.com/shows/id-24826"
+                },
+                "artwork_208x117": "http://static-api.guidebox.com/thumbnails_small/480-921348171-208x117.jpg",
+                "artwork_304x171": "http://static-api.guidebox.com/thumbnails_medium/480-2546335175-304x171.jpg",
+                "artwork_448x252": "http://static-api.guidebox.com/thumbnails_large/480-4007892967-448x252.jpg",
+                "artwork_608x342": "http://static-api.guidebox.com/thumbnails_xlarge/480-3349084389-608x342.jpg"
+            },
+            {
+                "id": 6083,
+                "title": "Xtreme 4x4",
+                "alternate_titles": [],
+                "container_show": 0,
+                "first_aired": "2005-01-08",
+                "imdb_id": "tt0791286",
+                "tvdb": 112701,
+                "themoviedb": 10907,
+                "freebase": "/m/0b8npc",
+                "wikipedia_id": 3958431,
+                "tvrage": {
+                    "tvrage_id": 22664,
+                    "link": "http://www.tvrage.com/shows/id-22664"
+                },
+                "artwork_208x117": "http://static-api.guidebox.com/thumbnails_small/6083-8177068452-208x117.jpg",
+                "artwork_304x171": "http://static-api.guidebox.com/thumbnails_medium/6083-283513936-304x171.jpg",
+                "artwork_448x252": "http://static-api.guidebox.com/thumbnails_large/6083-7093636519-448x252.jpg",
+                "artwork_608x342": "http://static-api.guidebox.com/thumbnails_xlarge/6083-6627269550-608x342.jpg"
+            },
+            {
+                "id": 645,
+                "title": "Make Me A Supermodel",
+                "alternate_titles": [],
+                "container_show": 0,
+                "first_aired": "2008-01-02",
+                "imdb_id": "tt1159605",
+                "tvdb": 81333,
+                "themoviedb": 18790,
+                "freebase": "/m/05q9d4x",
+                "wikipedia_id": null,
+                "tvrage": {
+                    "tvrage_id": 18165,
+                    "link": "http://www.tvrage.com/shows/id-18165"
+                },
+                "artwork_208x117": "http://static-api.guidebox.com/thumbnails_small/645-4329133914-208x117.jpg",
+                "artwork_304x171": "http://static-api.guidebox.com/thumbnails_medium/645-1032470549-304x171.jpg",
+                "artwork_448x252": "http://static-api.guidebox.com/thumbnails_large/645-5849360828-448x252.jpg",
+                "artwork_608x342": "http://static-api.guidebox.com/thumbnails_xlarge/645-1545079905-608x342.jpg"
+            },
+            {
+                "id": 2904,
+                "title": "Around the World in 80 Ways",
+                "alternate_titles": [],
+                "container_show": 0,
+                "first_aired": "2011-10-02",
+                "imdb_id": "tt1911720",
+                "tvdb": 252269,
+                "themoviedb": 42768,
+                "freebase": "/m/0jzx_nf",
+                "wikipedia_id": 34744094,
+                "tvrage": {
+                    "tvrage_id": 28406,
+                    "link": "http://www.tvrage.com/shows/id-28406"
+                },
+                "artwork_208x117": "http://static-api.guidebox.com/thumbnails_small/2904-8739314889-208x117-poster.jpg",
+                "artwork_304x171": "http://static-api.guidebox.com/thumbnails_medium/2904-5038753254-304x171-poster.jpg",
+                "artwork_448x252": "http://static-api.guidebox.com/thumbnails_large/2904-1456890912-448x252-poster.jpg",
+                "artwork_608x342": "http://static-api.guidebox.com/thumbnails_xlarge/2904-962901754-608x342-poster.jpg"
+            },
+            {
+                "id": 181,
+                "title": "Expedition Impossible",
+                "alternate_titles": [],
+                "container_show": 0,
+                "first_aired": "2011-06-23",
+                "imdb_id": "tt1771224",
+                "tvdb": 248786,
+                "themoviedb": 39303,
+                "freebase": "/m/0gtwqy9",
+                "wikipedia_id": 31756900,
+                "tvrage": {
+                    "tvrage_id": 27940,
+                    "link": "http://www.tvrage.com/shows/id-27940"
+                },
+                "artwork_208x117": "http://static-api.guidebox.com/thumbnails_small/181-562661482-208x117.jpg",
+                "artwork_304x171": "http://static-api.guidebox.com/thumbnails_medium/181-832503867-304x171.jpg",
+                "artwork_448x252": "http://static-api.guidebox.com/thumbnails_large/181-4653710523-448x252.jpg",
+                "artwork_608x342": "http://static-api.guidebox.com/thumbnails_xlarge/181-2666776921-608x342.jpg"
+            },
+            {
+                "id": 11606,
+                "title": "Flipped Off",
+                "alternate_titles": [],
+                "container_show": 0,
+                "first_aired": "2012-04-28",
+                "imdb_id": "tt1935450",
+                "tvdb": 257836,
+                "themoviedb": 42745,
+                "freebase": "/m/0jl0dln",
+                "wikipedia_id": 35655270,
+                "tvrage": {
+                    "tvrage_id": 31096,
+                    "link": "http://www.tvrage.com/shows/id-31096"
+                },
+                "artwork_208x117": "http://static-api.guidebox.com/thumbnails_small/11606-6292610634-208x117-poster.jpg",
+                "artwork_304x171": "http://static-api.guidebox.com/thumbnails_medium/11606-6384600787-304x171-poster.jpg",
+                "artwork_448x252": "http://static-api.guidebox.com/thumbnails_large/11606-7111057360-448x252-poster.jpg",
+                "artwork_608x342": "http://static-api.guidebox.com/thumbnails_xlarge/11606-6252396922-608x342-poster.jpg"
+            }
+        ]
+    }
 ]
+
+export default survivor
