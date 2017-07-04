@@ -17,7 +17,7 @@ const SourceCards = props => {
         <section className="movie-sources">
             <h3>Subscription Sources:</h3>
             <div className="subscription-sources">
-                {(props.userSubscriptions === 'free')? 'You Havent Selected Any Subscription Sources' : userSubscriptions}
+                {(props.userSubscriptions === 'free')? "You Haven't Selected Any Subscription Sources" : userSubscriptions}
             </div>
             <hr/>
             <h3>Free Sources:</h3>
