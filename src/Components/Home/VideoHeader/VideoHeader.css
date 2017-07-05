@@ -1,11 +1,11 @@
 .homepage-hero {
     position: relative;
-    display: inline-block;
+    display:flex;
 }
 
 .header-video {
-    background: #1A1423;
-
+    margin: 0 auto;
+    max-height:100%;
 }
 
 .header-video video {
@@ -22,8 +22,6 @@
     text-align: center;
     color: white;
     font-weight: bold;
-
-
 }
 
 .stream-search-header p {
@@ -54,4 +52,19 @@
     font-size: 6em;
     text-shadow: 0 2px 3px #1a1423;
     margin-bottom: 1%;
+}
+
+@media  (max-width: 840px){
+    .stream-search-header {
+        font-size: 0.5em;
+    }
+}
+
+@media (max-width: 420px) {
+    .stream-search-header {
+        font-size: 0.4em;
+    }
+    .stream-search-header a {
+        font-size: 2em;
+    }
 }
