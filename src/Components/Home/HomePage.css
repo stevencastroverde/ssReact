@@ -1,3 +1,10 @@
+#home-header .home-video {
+    background-color:#1A1423;
+    padding-bottom:20px;
+}
+
+
+
 .source-description{
     height: 60%;
     background-color: rgba(227,227,227,1);
@@ -93,4 +100,11 @@
     20%, 40%, 60%, 80% {
         transform: translate3d(10px, 0, 0);
     }
-};
+}
+
+@media (max-width: 550px) {
+    #please-read {
+        font-size: 2em;
+    }
+    
+}

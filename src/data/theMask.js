@@ -1,4 +1,4 @@
-[
+const theMask = [
     {
         "id": 39014,
         "title": "The Mask",
@@ -1257,3 +1257,4 @@
         ]
     }
 ]
+export default theMask

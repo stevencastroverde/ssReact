@@ -50,9 +50,9 @@ class HomePage extends Component {
             <div>
                 <section id="home-header">
                     <button id="please-read" onClick={this.toggleModal}>Click Me!</button>
-
-                    <VideoHeader />
-                    <Modal  onClose={this.toggleModal} message={modalContent} show={this.state.isOpen} />
+                    <div className="home-video">
+                        <VideoHeader />
+                    </div>
 
                 </section>
                 <section className="source-description">
@@ -76,6 +76,7 @@ class HomePage extends Component {
                     <h2>Stream Search makes everything more convienent</h2>
                    <Gallery />
                 </section>
+                <Modal  onClose={this.toggleModal} message={modalContent} show={this.state.isOpen} />
             </div>
         )
     }
