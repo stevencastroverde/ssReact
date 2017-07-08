@@ -44,7 +44,7 @@ class Season extends Component {
             </div>
             <div className="season-episodes" style={stateStyle}>
 
-               {this.props.episodes.map((episode, i) => {return <Episode key={episode.id} {...episode} /> })}
+               {this.props.episodes.map((episode, i) => {return <Episode key={i} {...episode} /> })}
             </div>
           </section>
       )

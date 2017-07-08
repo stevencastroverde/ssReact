@@ -38,16 +38,19 @@ describe('<Season /> state/props', () => {
     it('starts collapsed', () => {
         expect(wrapper.state().isExpanded).toEqual(false);
     });
-    it('when collapsed, season heading color is collapsedColor', () =>{
-        console.log(wrapper.html())
-        const seasonStyle = wrapper.find('.season-heading').get(0).style;
-        expect(seasonStyle).toHaveProperty('color', '#fefefe')
-
+    it('when collapsed, season number color is collapsedColor', () =>{
+        const seasonStyle = wrapper.find('.season-number').get(0).style._values;
+        expect(seasonStyle).toHaveProperty('background', 'rgb(254, 254, 254)')
     });
 
     it('when clicked isExpanded equals true',() => {
         div.simulate('click');
         expect(wrapper.state().isExpanded).toEqual(true);
+    });
+    it('when expanded season number should have expandedColor background', () => {
+        const seasonNumber = wrapper.find('.season-number').get(0).style._values;
+       expect(seasonNumber).toHaveProperty('background-color', 'rgb(178, 178, 178)');
+
     });
     it('when clicked twice isExpanded equals false', () => {
         div.simulate('click');
