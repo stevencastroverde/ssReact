@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import MoviePage from './MoviePage';
+import HomePage from "../Home/HomePage";
 
 describe('<MoviePage /> UI Component', () => {
     const testParams = {
@@ -26,7 +27,13 @@ describe('<MoviePage /> UI Component', () => {
         shallow(<MoviePage location={testPaths.lordOfTheRings} match={testParams}/>)
     });
 
-
+    describe('Movie Page functions', () => {
+        const wrapper = shallow(<HomePage/>);
+        const instance = wrapper.instance();
+        it('selects related movie when clicked', () => {
+            
+        })
+    });
 });
 
 
