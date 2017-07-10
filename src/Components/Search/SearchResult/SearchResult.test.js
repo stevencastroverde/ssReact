@@ -20,5 +20,6 @@ describe('<SearchResult /> UI Component', () => {
         shallow(<SearchResult chooseCard={_choose}/>)
             .simulate('click');
         expect(_choose).toHaveBeenCalled()
-    })
+    });
+
 });

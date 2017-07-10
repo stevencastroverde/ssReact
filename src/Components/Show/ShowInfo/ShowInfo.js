@@ -19,13 +19,13 @@ const ShowInfo = props => {
             </div>
             <div>
                 <h4>Show Status:</h4>
-                <h5>{showStatus}</h5>
+                <h5 id="status">{showStatus}</h5>
             </div>
             <div>
              <h5>You might also like:</h5>
             </div>
         </div>
     )
-}
+};
 
 export default ShowInfo

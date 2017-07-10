@@ -28,10 +28,13 @@ describe('<MoviePage /> UI Component', () => {
     });
 
     describe('Movie Page functions', () => {
-        const wrapper = shallow(<HomePage/>);
+        let history = [];
+        let event = {};
+        const wrapper = shallow(<MoviePage location={testPaths.lordOfTheRings} history={history} match={testParams}/>);
         const instance = wrapper.instance();
-        it('selects related movie when clicked', () => {
-            
+        xit('selects related movie when clicked', () => {
+            instance.selectedMovie(event, 35);
+            console.log(instance.props)
         })
     });
 });

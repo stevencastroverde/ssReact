@@ -46,7 +46,7 @@ class MoviePage extends Component {
                });
        }
    }
-    selectedMovie= (e, showId) => {
+    selectedMovie = (e, showId) => {
         let params = this.props.match.params;
         this.props.history.push('/movie/' + showId + '/' + params.subscriptions);
         this.props.history.go();
