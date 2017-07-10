@@ -13,7 +13,7 @@ const Episode = (props) => {
             </div>
             <div className="episode-info">
                 <h4>{props.title}</h4>
-                <h5>{roundRuntime(props.duration) + ' min'}</h5>
+                <h5 id="runtime">{roundRuntime(props.duration) + ' min'}</h5>
                 <p>{props.overview}</p>
                 <div id="episode-link">
                     <a target="_blank" rel="noopener noreferrer" href={props.subscription_web_sources[0].link}>

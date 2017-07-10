@@ -30,7 +30,6 @@ import './ShowPage.css';
     for (let key in seasonNumber) {
         myArray.push({season: key, episodes: seasonNumber[key]});
     }
-    console.log(myArray);
     return myArray;
 };
 
