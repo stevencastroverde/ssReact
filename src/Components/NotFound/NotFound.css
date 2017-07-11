@@ -1,0 +1,40 @@
+.not-found-background {
+    background-color: #898989;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+.not-found-text {
+    color: #e3e3e3;
+    font-family: 'Open Sans', 'sans-serif';
+    padding: 5%;
+}
+
+.not-found-text h1 {
+    font-size: 3em;
+}
+
+.not-found-text h2 {
+    font-size: 1.5em;
+    font-style: italic;
+    margin: 0 0 3em 0;
+}
+
+.not-found-text a {
+    background-color: transparent;
+    border: solid 1px #cb356b;
+    font-size: 2em;
+    font-family: 'Nunito', 'sans-serif';
+    padding: 2%;
+    margin: 1.3em 0;
+    border-radius: 10px;
+    color: #e3e3e3;
+    text-decoration: none;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.8);
+    transition:background-color .5s ease-in-out;
+}
+
+.not-found-text a:hover {
+    background-color: #cb356b;
+
+}

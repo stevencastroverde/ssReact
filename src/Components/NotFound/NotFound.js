@@ -1,18 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 import './NotFound.css';
 
-class NotFound extends Component {
-    render() {
+const NotFound = () => {
         return (
 
-            <div>
-                <h1>M Not Found</h1>
-
+            <div className="not-found-background">
+                <div className="not-found-text">
+                    <h1>Whoa... Where are we?</h1>
+                    <h2>Looks like this page doesn't exist</h2>
+                    <Link to="/">Return Home</Link>
+                </div>
             </div>
         )
-    }
-}
+
+};
 
 export default NotFound;
