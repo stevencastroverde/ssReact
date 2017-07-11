@@ -7,10 +7,12 @@ const SearchBar = (props) => {
         return (
             <form onSubmit={props.submitSearch} className="search-bar">
                 <div className="radio-buttons">
-                    <input type="radio" id="tv-radio-btn" required name="search-type" value='tv' onChange={props.radioCheck} />
-                    <label htmlFor="tv-radio-btn">Television</label>
-                    <input type="radio" id="movie-radio-btn" name="search-type" value='movies'  onChange={props.radioCheck} />
-                    <label htmlFor="movie-radio-btn">Movies</label>
+                    <radiogroup>
+                        <input type="radio" id="tv-radio-btn" required name="search-type" value='tv' checked={true} onChange={props.radioCheck} />
+                        <label htmlFor="tv-radio-btn">Television</label>
+                        <input type="radio" id="movie-radio-btn" name="search-type" value='movies'  onChange={props.radioCheck} />
+                        <label htmlFor="movie-radio-btn">Movies</label>
+                    </radiogroup>
                 </div>
                 <input type="text" placeholder="Movie Title or Show Name" required name='searchTerm' id="search-input" onChange={props.inputChange} />
                         <div className="checkbox-list">

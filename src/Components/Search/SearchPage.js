@@ -14,7 +14,7 @@ class SearchPage extends Component {
         this.state = {
             results: [],
             searchTerm: '',
-            searchType: '',
+            searchType: 'tv',
             subscriptions: [],
             isEnabled: false
         };
@@ -54,13 +54,15 @@ class SearchPage extends Component {
     }
     handleSearch(e){
         e.preventDefault();
+        let lettersAndNumbersOnly = this.state.searchTerm.match(/[a-zA-Z0-9 ]+/g).join('');
+        console.log(lettersAndNumbersOnly)
         if(this.state.searchType === 'tv') {
-            API.searchShows(this.state.searchTerm)
+            API.searchShows(lettersAndNumbersOnly)
                 .then(data => {
                     this.setState({results: data})
                 })
         } else {
-            API.searchMovies(this.state.searchTerm)
+            API.searchMovies(lettersAndNumbersOnly)
                 .then(data => {
                     this.setState({results: data})
                 })
