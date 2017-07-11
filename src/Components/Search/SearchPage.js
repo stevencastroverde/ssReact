@@ -15,7 +15,8 @@ class SearchPage extends Component {
             results: [],
             searchTerm: '',
             searchType: '',
-            subscriptions: []
+            subscriptions: [],
+            isEnabled: false
         };
         this.handleCheckboxChange = this.handleCheckboxChange.bind(this);
         this.handleSearch = this.handleSearch.bind(this);
